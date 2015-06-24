@@ -15,4 +15,5 @@ brew cask install kobito
 brew cask install mysqlworkbench
 brew cask install sublime-text
 brew cask install mou
+brew cask install hipchat
 brew cask install quicklook-json
