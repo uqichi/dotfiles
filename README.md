@@ -6,7 +6,7 @@ my dotfiles.
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
 
 ## 2. Download mac apps manually from App Store
-Search apps below.
+Search apps below on App Store.
 
 - Magnet
 
@@ -24,6 +24,6 @@ Search apps below.
 ## 5. Execute init scripts
 `sh init.sh`
 
-It is also possible to execute partly.
+It is also possible to execute scripts partly.
 
 `sh init.brew.sh init.vim.sh`
