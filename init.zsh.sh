@@ -19,3 +19,7 @@ done
 chsh -s /bin/zsh
 
 # 5. Open a new Zsh terminal window or tab.
+
+
+# add source my zshrc
+echo "source $HOME/dotfiles/.zshrc" >> $HOME/.zshrc
