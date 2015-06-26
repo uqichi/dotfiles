@@ -15,3 +15,8 @@ sh ./brew/brew.sh
 sh ./brew/brewcask.sh
 sh ./zsh/zsh.sh
 sh ./vim/vim.sh
+
+## Install tmuxinator
+sudo gem install tmuxinator
+ln -s $HOME/dotfiles/.tmuxinator $HOME/.tmuxinator
+source $HOME/.zshrc
