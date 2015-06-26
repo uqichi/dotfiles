@@ -1,22 +1,13 @@
 #!/bin/sh
 
-## Install homebrew
-#  http://brew.sh
+
+# homebrew installation
+# http://brew.sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 
-## Setup iterm2
-#  1. Create a new profile
-#  2. Load Preset from iterm/custom-solarized-dark.itermcolors
-#  3. Set it as default profile
-
-## Exec shells
-sh ./brew/brew.sh
-sh ./brew/brewcask.sh
-sh ./zsh/zsh.sh
-sh ./vim/vim.sh
-
-## Install tmuxinator
-sudo gem install tmuxinator
-ln -s $HOME/dotfiles/.tmuxinator $HOME/.tmuxinator
-source $HOME/.zshrc
+. ./init.brew.sh
+. ./init.brewcask.sh
+. ./init.zsh.sh
+. ./init.vim.sh
+. ./init.tmuxinator.sh
