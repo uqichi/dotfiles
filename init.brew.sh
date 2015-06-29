@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# install
+# brew install
 brew install git
 brew install tig
 brew install tmux

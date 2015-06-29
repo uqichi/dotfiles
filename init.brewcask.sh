@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# install
+# brew cask install
 #brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 brew cask install google-chrome
 brew cask install alfred

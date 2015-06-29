@@ -2,10 +2,17 @@
 # dotfiles
 my dotfiles.
 
+## 0. Clone this repository
+```
+cd ~
+
+git clone git@github.com:chkkchy/dotfiles.git
+```
+
 ## 1. Install the Command Line Tools
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
 
-## 2. Download mac apps manually from App Store
+## 2. Download mac apps manually
 Search apps below on App Store.
 
 - Magnet
@@ -18,12 +25,13 @@ Search apps below on App Store.
 ## 4. Install homebrew
 <http://brew.sh>
 
-1. `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. `brew doctor`
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## 5. Execute init scripts
-`sh init.sh`
+brew doctor
+```
 
-It is also possible to execute scripts partly.
-
-`sh init.brew.sh init.vim.sh`
+## 5. Setup everything else
+```
+sh setup.sh
+```
