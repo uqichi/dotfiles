@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # brew install
-brew install git
+#brew install git
 brew install tig
 brew install tmux
 brew install tree
