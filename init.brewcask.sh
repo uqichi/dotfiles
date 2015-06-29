@@ -6,6 +6,7 @@ brew cask install google-chrome
 brew cask install alfred
 brew cask install iterm2
 brew cask install dropbox
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install flux
 brew cask install evernote

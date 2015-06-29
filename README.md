@@ -5,9 +5,8 @@ my dotfiles.
 ## Simple setup
 ### 1. Install the Command Line Tools
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
-q
-### 2. Install Homebrew
 
+### 2. Install Homebrew
 Open Terminal.App then install:
 
 ```

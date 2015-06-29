@@ -1,1 +1,1 @@
-source ./.zshrc.alias
+source $HOME/dotfiles/.zshrc.alias
