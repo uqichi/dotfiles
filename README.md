@@ -42,3 +42,4 @@ Search apps below on App Store.
 - Magnet
 - Memory Monitor
 - Stufflt Expander
+- Dash
