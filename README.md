@@ -22,6 +22,7 @@ brew install git
 ```
 cd ~
 git clone git@github.com:chkkchy/dotfiles.git
+cd dotfiles
 ```
 
 ### 5. Execute
@@ -31,15 +32,14 @@ sh setup.sh
 
 ## Manual setup
 ### - Setup iterm2
-1. Open Preference (Cmd+,)
+1. Open Preference
 2. Create a new profile
 3. Load Preset from iterm/custom-solarized-dark.itermcolors
 4. Set it as default profile
 
 ### - Download mac apps
-Search apps below on App Store.
+Search and donwload apps below on App Store.
 
 - Magnet
 - Memory Monitor
 - Stufflt Expander
-- Dash
