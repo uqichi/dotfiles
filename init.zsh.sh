@@ -15,7 +15,3 @@ done
 # Set Zsh as your default shell:
 zsh
 chsh -s /bin/zsh
-
-# Add source
-echo "source $HOME/dotfiles/.zshrc" >> $HOME/.zshrc
-source $HOME/.zshrc

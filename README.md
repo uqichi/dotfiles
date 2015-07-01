@@ -7,7 +7,7 @@ my dotfiles.
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
 
 ### 2. Install Homebrew
-Open Terminal.App then install:
+Open Terminal.App and install:
 
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -24,7 +24,7 @@ cd ~
 git clone git@github.com:chkkchy/dotfiles.git
 ```
 
-### 5. Setup everything
+### 5. Execute
 ```
 sh setup.sh
 ```

@@ -1,0 +1,6 @@
+# hoge
+
+
+# source
+source $HOME/.zshrc.alias
+source $HOME/.tmuxinator/tmuxinator.zsh
