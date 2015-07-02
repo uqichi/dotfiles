@@ -2,11 +2,6 @@
 # dotfiles
 my dotfiles.
 
-## Prezto
-```
-ln -s $HOME/dotfiles/prezto $HOME/.zprezto
-```
-
 ## Simple setup
 ### 1. Install the Command Line Tools
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
@@ -36,13 +31,7 @@ sh setup.sh
 ```
 
 ## Manual setup
-### - Setup iterm2
-1. Open Preference
-2. Create a new profile
-3. Load Preset from iterm/custom-solarized-dark.itermcolors
-4. Set it as default profile
-
-### - Download mac apps
+### Download mac apps
 Search and donwload apps below on App Store.
 
 - Magnet
