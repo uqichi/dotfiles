@@ -66,6 +66,8 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 # ============================================================
 # Install
 sudo gem install tmuxinator
+mkdir -p $HOME/.tmuxinator
+cp $HOME/dotfiles/tmuxinator/tmuxinator.zsh $HOME/.tmuxinator
 
 # ------------------------------------------------------------
 
@@ -76,7 +78,6 @@ mkdir -p $HOME/Develop/{git,eclipse/workspace}
 ln -s $HOME/dotfiles/.zshrc.custom $HOME/.zshrc.custom
 ln -s $HOME/dotfiles/.zshrc.alias $HOME/.zshrc.alias
 ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
-ln -s $HOME/dotfiles/.tmuxinator $HOME/.tmuxinator
 echo "source $HOME/dotfiles/.zshrc.custom" >> $HOME/.zshrc
 source $HOME/.zshrc
 
