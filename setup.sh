@@ -39,8 +39,8 @@ brew cask install quicklook-json
 # zsh
 # https://github.com/sorin-ionescu/prezto
 # ============================================================
-# Clone the repository:
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+# Copy the forked repository:
+ln -s $HOME/dotfiles/prezto $HOME/.zprezto
 # Create a new Zsh configuration by copying the Zsh configuration files provided:
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
@@ -49,10 +49,6 @@ done
 # Set Zsh as your default shell:
 zsh
 chsh -s /bin/zsh
-# Copy my config
-ln -s $HOME/dotfiles/.zshrc.alias $HOME/.zshrc.alias
-ln -s $HOME/dotfiles/.zshrc.custom $HOME/.zshrc.custom
-source $HOME/.zshrc
 
 # ============================================================
 # vim

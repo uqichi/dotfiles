@@ -1,8 +1,0 @@
-# env
-export EDITOR='vim'
-export VISUAL='vim'
-export PAGER='less'
-
-# source
-source $HOME/.zshrc.alias
-source $HOME/.tmuxinator/tmuxinator.zsh
