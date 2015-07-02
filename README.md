@@ -2,6 +2,11 @@
 # dotfiles
 my dotfiles.
 
+## Prezto
+```
+ln -s $HOME/dotfiles/prezto $HOME/.zprezto
+```
+
 ## Simple setup
 ### 1. Install the Command Line Tools
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.

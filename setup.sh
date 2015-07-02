@@ -6,6 +6,7 @@
 #brew install git
 brew install tig
 brew install tmux
+brew install reattach-to-user-namespace
 brew install tree
 brew install w3m
 brew install zsh
@@ -48,6 +49,10 @@ done
 # Set Zsh as your default shell:
 zsh
 chsh -s /bin/zsh
+# Copy my config
+ln -s $HOME/dotfiles/.zshrc.alias $HOME/.zshrc.alias
+ln -s $HOME/dotfiles/.zshrc.custom $HOME/.zshrc.custom
+source $HOME/.zshrc
 
 # ============================================================
 # vim
@@ -59,6 +64,8 @@ curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # Download solarized-color
 cd $HOME/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
+# Copy my config
+ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
 
 # ============================================================
 # tmuxinator
@@ -66,17 +73,9 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 # ============================================================
 # Install
 sudo gem install tmuxinator
-mkdir -p $HOME/.tmuxinator
-cp $HOME/dotfiles/tmuxinator/tmuxinator.zsh $HOME/.tmuxinator
+cp -r $HOME/dotfiles/tmuxinator/tmuxinator.zsh $HOME/.tmuxinator
 
 # ------------------------------------------------------------
 
-# create directories
+# Create my directories
 mkdir -p $HOME/Develop/{git,eclipse/workspace}
-
-# symlinks
-ln -s $HOME/dotfiles/.zshrc.custom $HOME/.zshrc.custom
-ln -s $HOME/dotfiles/.zshrc.alias $HOME/.zshrc.alias
-ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
-echo "source $HOME/dotfiles/.zshrc.custom" >> $HOME/.zshrc
-source $HOME/.zshrc
