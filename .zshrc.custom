@@ -1,5 +1,6 @@
-# hoge
-
+# env
+export EDITOR='vim'
+export VISUAL='vim'
 
 # source
 source $HOME/.zshrc.alias
