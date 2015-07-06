@@ -4,6 +4,7 @@
 ./brew.sh
 ./brewcask.sh
 ./vim.sh
+./tmux.sh
 ./tmuxinator.sh
 ./prezto.sh
 
