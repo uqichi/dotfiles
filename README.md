@@ -35,3 +35,6 @@ Search and donwload apps below on App Store.
 - Magnet
 - Memory Monitor
 - Stufflt Expander
+
+### Extra settings
+<http://d.hatena.ne.jp/seiji379/20100105/1262671218>
