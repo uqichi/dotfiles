@@ -2,7 +2,7 @@
 # dotfiles
 my dotfiles.
 
-## Simple setup
+## Setup
 ### 1. Install the Command Line Tools
 The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
 
@@ -28,13 +28,35 @@ cd ~/dotfiles
 sh setup.sh
 ```
 
-## Manual setup
-### Download mac apps
-Search and donwload apps below on App Store.
-
+## Extras
+### Mac Apps
 - Magnet
 - Memory Monitor
 - Stufflt Expander
 
-### Extra settings
-<http://d.hatena.ne.jp/seiji379/20100105/1262671218>
+### Eclipse
+#### plugins
+- Vrapper
+- Moonrise UI Theme
+- Color Theme
+- Checkstyle plugin
+
+#### extras
+- lombok
+	
+	Clean-Restart after executed lombok.jar:
+	
+	```
+	/Applications/Eclipse.app/Contents/MacOS/eclipse -clean
+	```
+	
+- Java formatter
+
+	Preference>Java>Code Style>Formatter
+	
+
+- Save Actions
+
+	Preference>Java>Editor>Save Actions
+	
+	<http://d.hatena.ne.jp/seiji379/20100105/1262671218>
