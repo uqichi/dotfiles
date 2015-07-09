@@ -22,13 +22,27 @@ cd ~
 git clone git@github.com:chkkchy/dotfiles.git
 ```
 
-### 5. Execute
+### 5. Clone my prezto repository
+```
+cd ~/dotfiles
+git clone git@github.com:chkkchy/prezto.git
+```
+Then, update submodules:
+
+```
+cd ./prezto
+git pull && git submodule update --init --recursive
+```
+
+### 6. Exec the script file
 ```
 cd ~/dotfiles
 sh setup.sh
 ```
 
-## Extras
+----
+##Extras
+
 ### Mac Apps
 - Magnet
 - Memory Monitor
@@ -41,7 +55,7 @@ sh setup.sh
 - Color Theme
 - Checkstyle plugin
 
-#### extras
+#### extra settings
 - lombok
 	
 	Clean-Restart after executed lombok.jar:
