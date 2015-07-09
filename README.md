@@ -34,7 +34,7 @@ cd ./prezto
 git pull && git submodule update --init --recursive
 ```
 
-### 6. Exec the script file
+### 6. Exec the setup script
 ```
 cd ~/dotfiles
 sh setup.sh
