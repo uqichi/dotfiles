@@ -48,6 +48,24 @@ sh setup.sh
 - Memory Monitor
 - Stufflt Expander
 
+### iTerm2
+#### shortcut keys
+Key bind list:
+<http://loumo.jp/wp/archive/20120305090532/>,
+<http://openlab.dino.co.jp/2007/09/18/19355263.html>,
+<http://masasuzu.hatenablog.jp/entry/20111201/1322745282>
+
+Enable alt key for meta key:
+<http://voidptr.seesaa.net/article/395408528.html>
+
+Preference>Keys>Global Shortcut Keys
+
+```
+bind Alt+f to Esc+f
+bind Alt+b to Esc+b
+bind Alt+d to Esc+d
+```
+
 ### Eclipse
 #### plugins
 - Vrapper
