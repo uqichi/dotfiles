@@ -3,7 +3,7 @@
 brew update && brew cleanup
 
 # Add or Remove as you like
-APPS="tig tmux reattach-to-user-namespace tree w3m zsh caskroom/cask/brew-cask"
+APPS="tig tmux reattach-to-user-namespace tree wget coreutils w3m zsh caskroom/cask/brew-cask"
 
 for app in $APPS
 do
