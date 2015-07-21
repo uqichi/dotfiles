@@ -8,5 +8,5 @@
 ./src/tmuxinator.sh
 ./src/prezto.sh
 
-# Create dir
-mkdir -p $HOME/Develop/{git,eclipse/workspace}
+# Create my directories
+mkdir -p $HOME/Develop/{git,eclipse/workspace,playground}
