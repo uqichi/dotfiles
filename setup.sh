@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Setup
-./src/brew.sh
-./src/brewcask.sh
-./src/vim.sh
-./src/tmux.sh
-./src/tmuxinator.sh
+./jobs/brew.sh
+./jobs/brewcask.sh
+./jobs/vim.sh
+./jobs/tmux.sh
+./jobs/tmuxinator.sh
 
 # Prepare directories
 mkdir -p $HOME/Develop/{git,eclipse/workspace,playground}
