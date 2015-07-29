@@ -8,5 +8,5 @@ curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd $HOME/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 
-# Copy my config
+# Copy config
 ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
