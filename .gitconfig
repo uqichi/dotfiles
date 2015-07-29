@@ -1,3 +1,5 @@
 [alias]
 	n = now --all --stat
 	now = now --all --stat
+[core]
+	excludesfile = ~/.gitignore

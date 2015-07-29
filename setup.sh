@@ -3,6 +3,7 @@
 # Setup
 ./jobs/brew.sh
 ./jobs/brewcask.sh
+./jobs/git.sh
 ./jobs/vim.sh
 ./jobs/tmux.sh
 ./jobs/tmuxinator.sh
