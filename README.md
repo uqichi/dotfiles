@@ -16,22 +16,14 @@ brew doctor
 ```
 brew install git
 ```
-### 4. Clone the repository
+
+### 4. Setup prezto
+Follow the [installation](https://github.com/chkkchy/prezto#installation).
+
+### 5. Clone the repository
 ```
 cd ~
 git clone git@github.com:chkkchy/dotfiles.git
-```
-
-### 5. Clone my prezto repository
-```
-cd ~/dotfiles
-git clone git@github.com:chkkchy/prezto.git
-```
-Then, update submodules:
-
-```
-cd ./prezto
-git pull && git submodule update --init --recursive
 ```
 
 ### 6. Exec the setup script
@@ -40,25 +32,27 @@ cd ~/dotfiles
 sh setup.sh
 ```
 
-----
-##Extras
+
+##Extra Setup
 
 ### Mac Apps
+Download on App Store:
+
 - Magnet
 - Memory Monitor
 - Stufflt Expander
 
 ### iTerm2
-#### shortcut keys
-Key bind list:
-<http://loumo.jp/wp/archive/20120305090532/>,
-<http://openlab.dino.co.jp/2007/09/18/19355263.html>,
+#### shortcut
+<http://loumo.jp/wp/archive/20120305090532/>
+
+<http://openlab.dino.co.jp/2007/09/18/19355263.html>
+
 <http://masasuzu.hatenablog.jp/entry/20111201/1322745282>
 
-Enable alt key for meta key:
 <http://voidptr.seesaa.net/article/395408528.html>
 
-Preference>Keys>Global Shortcut Keys
+Preference > Keys > Global Shortcut Keys
 
 ```
 bind Alt+f to Esc+f
@@ -68,27 +62,14 @@ bind Alt+d to Esc+d
 
 ### Eclipse
 #### plugins
+Download on Eclipse Marketplace:
+
 - Vrapper
 - Moonrise UI Theme
 - Color Theme
 - Checkstyle plugin
 
 #### extra settings
-- lombok
-	
-	Clean-Restart after executed lombok.jar:
-	
-	```
-	/Applications/Eclipse.app/Contents/MacOS/eclipse -clean
-	```
-	
+- Lombok
 - Java formatter
-
-	Preference>Java>Code Style>Formatter
-	
-
 - Save Actions
-
-	Preference>Java>Editor>Save Actions
-	
-	<http://d.hatena.ne.jp/seiji379/20100105/1262671218>
