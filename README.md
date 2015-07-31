@@ -20,6 +20,8 @@ brew install git
 ### 4. Setup prezto
 Follow the [installation](https://github.com/chkkchy/prezto#installation).
 
+For setting local aliases, Create `.zshrc.alias.local` in your home directory.
+
 ### 5. Clone the repository
 ```
 cd ~
