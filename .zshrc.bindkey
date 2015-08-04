@@ -1,8 +1,0 @@
-# Refer the list by `bindkey`.
-#
-# Reset to default key bindings.
-# bindkey -d
-
-bindkey "^O" kill-word
-bindkey "^]" forward-word
-bindkey "^J" backward-word

@@ -3,35 +3,38 @@
 my dotfiles.
 
 ## Setup
-### 1. Install the Command Line Tools
-The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
+### Homebrew
+1. Install the `Command Line Tools`. The standalone package can be obtained from <https://developer.apple.com/downloads> or it can be installed via Xcode's preferences.
+2. Install:
 
-### 2. Install Homebrew
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
-```
+	```
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew doctor
+	```
 
-### 3. Install Git
-```
-brew install git
-```
-
-### 4. Setup prezto
+### Prezto
 Follow the [installation](https://github.com/chkkchy/prezto#installation).
 
-For setting local aliases, Create `.zshrc.alias.local` in your home directory.
+You should fork the repository for [customization](https://github.com/sorin-ionescu/prezto#customization).
 
-### 5. Clone the repository
-```
-cd ~
-git clone git@github.com:chkkchy/dotfiles.git
-```
 
-### 6. Exec the setup script
+### Soralized Vim
+Follow the [installation](https://github.com/altercation/vim-colors-solarized#option-2-pathogen-installation-recommended).
+
+### Tmuxinator
+Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation).
+
+### Execute `setup.sh`
+
 ```
-cd ~/dotfiles
-sh setup.sh
+// For using git command:
+brew install git
+
+// Clone the repository:
+cd ~ && git clone git@github.com:chkkchy/dotfiles.git
+
+// Execute the script:
+cd ~/dotfiles && ./setup.sh
 ```
 
 
@@ -44,24 +47,6 @@ Download on App Store:
 - Memory Monitor
 - Stufflt Expander
 
-### iTerm2
-#### shortcut
-<http://loumo.jp/wp/archive/20120305090532/>
-
-<http://openlab.dino.co.jp/2007/09/18/19355263.html>
-
-<http://masasuzu.hatenablog.jp/entry/20111201/1322745282>
-
-<http://voidptr.seesaa.net/article/395408528.html>
-
-Preference > Keys > Global Shortcut Keys
-
-```
-bind Alt+f to Esc+f
-bind Alt+b to Esc+b
-bind Alt+d to Esc+d
-```
-
 ### Eclipse
 #### plugins
 Download on Eclipse Marketplace:
@@ -71,7 +56,7 @@ Download on Eclipse Marketplace:
 - Color Theme
 - Checkstyle plugin
 
-#### extra settings
+#### extra
 - Lombok
 - Java formatter
 - Save Actions
