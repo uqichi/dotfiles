@@ -8,7 +8,7 @@ set so=7
 set ruler
 
 " Ignore case when searching
-set ignorecase
+"set ignorecase
 
 " When searching try to be smart about cases
 set smartcase

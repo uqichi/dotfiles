@@ -1,5 +1,5 @@
 [alias]
 	n = now --all --stat
-	now = now --all --stat
+	nr = now rebase
 [core]
 	excludesfile = ~/.gitignore
