@@ -1,0 +1,21 @@
+load() {
+    if [ -f $1 ];then
+        source $1
+    fi
+}
+
+# keybind
+bindkey "^O" kill-word
+bindkey "^]" forward-word
+bindkey "^J" backward-word
+
+# alias
+load $HOME/.zshrc.alias.mito
+alias -g L='| less'
+alias -g G='| grep'
+alias -g Gv='| grep -v '
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# tmuxinator
+load $HOME/.tmuxinator/tmuxinator.zsh
