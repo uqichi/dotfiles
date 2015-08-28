@@ -31,7 +31,7 @@ Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation)
 brew install git
 
 // Clone the repository:
-cd ~ && git clone git@github.com:chkkchy/dotfiles.git
+git clone git@github.com:chkkchy/dotfiles.git ~
 
 // Execute the script:
 cd ~/dotfiles && ./setup.sh

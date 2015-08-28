@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$PATH
+export PATH=~/bin:$PATH
 
 load() {
     if [ -f $1 ];then
@@ -12,7 +12,7 @@ bindkey "^]" forward-word
 bindkey "^J" backward-word
 
 # alias
-load $HOME/.zshrc.mito
+load ~/.zshrc.mito
 alias -g L='| less'
 alias -g G='| grep'
 alias -g Gv='| grep -v '
@@ -20,4 +20,4 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # tmuxinator
-load $HOME/.tmuxinator/tmuxinator.zsh
+load ~/.tmuxinator/tmuxinator.zsh

@@ -29,15 +29,9 @@ done
 ## ----------------------------------------------------------------------
 ## configurations
 ## ----------------------------------------------------------------------
-cp -r $HOME/dotfiles/tmuxinator $HOME/.tmuxinator
-ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-ln -s $HOME/dotfiles/.gitignore $HOME/.gitignore
-ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
-ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
-ln -s $HOME/dotfiles/.vrapperrc $HOME/.vrapperrc
-
-
-## ----------------------------------------------------------------------
-## directories
-## ----------------------------------------------------------------------
-mkdir -p $HOME/Develop/{git,eclipse/workspace,playground}
+cp -r ~/dotfiles/tmuxinator ~/.tmuxinator
+ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/gitignore ~/.gitignore
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/vrapperrc ~/.vrapperrc
