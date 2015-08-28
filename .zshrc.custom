@@ -12,7 +12,7 @@ bindkey "^]" forward-word
 bindkey "^J" backward-word
 
 # alias
-load $HOME/.zshrc.alias.mito
+load $HOME/.zshrc.mito
 alias -g L='| less'
 alias -g G='| grep'
 alias -g Gv='| grep -v '
