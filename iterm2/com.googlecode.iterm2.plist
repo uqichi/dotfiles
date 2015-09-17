@@ -440,17 +440,17 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>265 283 924 485 0 0 1440 877 </string>
+	<string>352 59 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 1440 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 4 1440 873 0 0 1440 877 </string>
+	<string>0 4 1440 437 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 4 1440 873 0 0 1440 877 </string>
+	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 60 1440 817 0 0 1440 877 </string>
+	<string>0 417 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>0 60 1440 817 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -2648,7 +2648,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>457356344.07285899</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>459758620.47259003</real>
+	<real>463040878.258201</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2657,6 +2657,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -2711,7 +2713,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-07-29T07:08:36Z</date>
+	<date>2015-09-04T06:04:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>

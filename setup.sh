@@ -33,4 +33,6 @@ do
   ln -s ~/dotfiles/${file} ~/.${file}
 done
 
+ln -sfn ~/dotfiles/dash/library.dash ~/Library/Application\ Support/Dash/library.dash
+
 cp -r ~/dotfiles/tmuxinator ~/.tmuxinator
