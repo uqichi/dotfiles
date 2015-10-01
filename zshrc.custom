@@ -13,9 +13,11 @@ bindkey "^J" backward-word
 
 # alias
 load ~/.zshrc.mito
+alias -g JR='| json_reformat'
 alias -g L='| less'
 alias -g G='| grep'
 alias -g Gv='| grep -v '
+alias -g X='| xargs'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
