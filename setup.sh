@@ -5,8 +5,8 @@
 ## ----------------------------------------------------------------------
 brew update && brew cleanup
 
-BREW_APPS="tig git-now tmux reattach-to-user-namespace tree wget watch coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay"
-for app in $BREW_APPS
+BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay gnu-typist"
+for app in $BREWAPPS
 do
   brew install $app
 done
@@ -17,8 +17,8 @@ done
 ## ----------------------------------------------------------------------
 brew upgrade brew-cask && brew cask cleanup
 
-CASK_APPS="google-chrome alfred iterm2 dash dropbox vagrant virtualbox flux evernote sequel-pro clipmenu appcleaner kobito mysqlworkbench sublime-text mou hipchat"
-for app in $CASK_APPS
+CASKAPPS="google-chrome alfred iterm2 dash dropbox vagrant virtualbox flux evernote sequel-pro clipmenu appcleaner kobito mysqlworkbench sublime-text mou hipchat"
+for app in $CASKAPPS
 do
   brew cask install $app
 done
