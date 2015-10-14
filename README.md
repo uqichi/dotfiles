@@ -11,12 +11,11 @@ my dotfiles.
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
 	```
-
+	
 ### Prezto (Zsh framework)
 Follow the [installation](https://github.com/chkkchy/prezto#installation).
 
 You should fork the repository for [customization](https://github.com/sorin-ionescu/prezto#customization).
-
 
 ### Soralized Vim (Vim color scheme)
 Follow the [installation](https://github.com/altercation/vim-colors-solarized#option-2-pathogen-installation-recommended).
@@ -25,15 +24,8 @@ Follow the [installation](https://github.com/altercation/vim-colors-solarized#op
 Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation).
 
 ### Execute `setup.sh`
-
 ```
-// For using git command:
-brew install git
-
-// Clone the repository:
-git clone git@github.com:chkkchy/dotfiles.git ~
-
-// Execute the script:
+git clone git@github.com:chkkchy/dotfiles.git ~/dotfiles
 cd ~/dotfiles && ./setup.sh
 ```
 
@@ -46,6 +38,10 @@ Download on App Store:
 - Magnet
 - Memory Monitor
 - Stufflt Expander
+
+### iTerm2
+Preferences>General>Preferences>Load preferences from a custom folder or URL:
+`{HOME_DIR}/dotfiles/iterm2`
 
 ### Eclipse
 #### plugins
