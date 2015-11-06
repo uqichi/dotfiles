@@ -4,7 +4,7 @@
 ## brew
 ## ----------------------------------------------------------------------
 #brew update && brew cleanup
-BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay gnu-typist"
+BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay gnu-typist"
 for app in $BREWAPPS
 do
   brew install $app
