@@ -3,3 +3,6 @@
 	nr = now rebase
 [core]
 	excludesfile = ~/.gitignore
+[user]
+	email = tamura_yukichi@cyberagent.co.jp
+	name = Tamura Yukichi

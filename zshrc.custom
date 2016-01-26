@@ -1,5 +1,3 @@
-export PATH=~/bin:$PATH
-
 load() {
     if [ -f $1 ];then
         source $1
@@ -12,7 +10,6 @@ bindkey "^]" forward-word
 bindkey "^J" backward-word
 
 # alias
-load ~/.zshrc.mito
 alias -g JR='| json_reformat'
 alias -g L='| less'
 alias -g G='| grep'
@@ -20,6 +17,12 @@ alias -g Gv='| grep -v '
 alias -g X='| xargs'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+dict() { open dict://$1; }
 
 # tmuxinator
 load ~/.tmuxinator/tmuxinator.zsh
+
+# nvm
+source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
+

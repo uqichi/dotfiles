@@ -1,10 +1,10 @@
 #!/bin/sh
 
 ## ----------------------------------------------------------------------
-## brew
+## brew apps
 ## ----------------------------------------------------------------------
 #brew update && brew cleanup
-BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay gnu-typist"
+BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf coreutils w3m zsh caskroom/cask/brew-cask pwgen yajl cowsay imagemagic"
 for app in $BREWAPPS
 do
   brew install $app
@@ -14,7 +14,7 @@ echo "[ Complete brew apps installation. ]"
 
 
 ## ----------------------------------------------------------------------
-## brewcask
+## brewcask apps
 ## ----------------------------------------------------------------------
 #brew upgrade brew-cask && brew cask cleanup
 CASKAPPS="google-chrome alfred iterm2 dash dropbox vagrant virtualbox flux evernote sequel-pro caffeine clipmenu appcleaner kobito mysqlworkbench sublime-text mou hipchat"
@@ -29,7 +29,7 @@ echo "[ Complete brewcask apps installation. ]"
 ## ----------------------------------------------------------------------
 ## configuration files
 ## ----------------------------------------------------------------------
-DOTFILES="gitconfig gitignore tmux.conf vimrc vrapperrc zshrc.custom"
+DOTFILES="gitconfig gitignore tmux.conf vimrc vrapperrc xvimrc zshrc.custom"
 for file in $DOTFILES
 do
   ln -s ~/dotfiles/${file} ~/.${file}
