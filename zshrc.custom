@@ -17,6 +17,7 @@ alias -g Gv='| grep -v '
 alias -g X='| xargs'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+goog() { open https://www.google.co.jp/\#q\=$1 }
 dict() { open dict://$1; }
 
 # tmuxinator
