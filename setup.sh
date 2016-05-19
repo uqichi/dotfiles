@@ -29,7 +29,7 @@ echo "[ Complete brewcask apps installation. ]"
 ## ----------------------------------------------------------------------
 ## configuration files
 ## ----------------------------------------------------------------------
-DOTFILES="gitconfig gitignore tmux.conf vimrc vrapperrc xvimrc zshrc.custom"
+DOTFILES="gitconfig gitignore tmux.conf vimrc vrapperrc xvimrc zshrc.me"
 for file in $DOTFILES
 do
   ln -s ~/dotfiles/${file} ~/.${file}
