@@ -4,11 +4,12 @@
 ## brew apps
 ## ----------------------------------------------------------------------
 #brew update && brew cleanup
-BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh nvm caskroom/cask/brew-cask"
+BREWAPPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh nvm direnv"
 for app in $BREWAPPS
 do
   brew install $app
 done
+brew tap caskroom/cask
 
 echo "[ Complete brew apps installation. ]"
 
@@ -17,7 +18,7 @@ echo "[ Complete brew apps installation. ]"
 ## brewcask apps
 ## ----------------------------------------------------------------------
 #brew upgrade brew-cask && brew cask cleanup
-CASKAPPS="google-chrome alfred iterm2 dash dropbox flux evernote sequel-pro caffeine clipmenu appcleaner mysqlworkbench sublime-text mou"
+CASKAPPS="google-chrome google-drive alfred iterm2 dash dropbox flux evernote sequel-pro caffeine clipmenu appcleaner mysqlworkbench sublime-text mou"
 for app in $CASKAPPS
 do
   brew cask install $app
