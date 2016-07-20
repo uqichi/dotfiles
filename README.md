@@ -17,7 +17,7 @@ Follow the [installation](https://github.com/chkkchy/prezto#installation).
 
 ### Soralized Vim
 Follow the [installation](https://github.com/altercation/vim-colors-solarized#option-2-pathogen-installation-recommended).
-Do not forget [pathogen](https://github.com/tpope/vim-pathogen#installation) in the installation.
+Do not miss [pathogen](https://github.com/tpope/vim-pathogen#installation) in the installation.
 
 
 ### Tmuxinator
