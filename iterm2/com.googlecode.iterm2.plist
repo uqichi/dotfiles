@@ -450,12 +450,16 @@
 	<string>295 416 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>-349 1039 606 456 -618 900 2560 1417 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>264 244 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 10 1439 860 0 0 1440 877 </string>
+	<string>-618 1623 2558 694 -618 900 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 25 1439 852 0 0 1440 877 </string>
+	<string>0 17 1438 860 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 412 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2661,7 +2665,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>30999DA2-8FB8-48D9-AC2E-3D533C30D8EF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>490671874.14420998</real>
+	<real>491289608.95587498</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -2670,6 +2674,8 @@
 	<real>477895519.26706302</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>486438084.08807403</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -2694,6 +2700,15 @@
 		<string>0018</string>
 		<string>0019</string>
 		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2761,13 +2776,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-20T03:21:13Z</date>
+	<date>2016-08-04T02:38:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -5979,6 +5994,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.4</string>
+	<string>3.0.5</string>
 </dict>
 </plist>
