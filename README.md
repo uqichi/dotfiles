@@ -27,7 +27,7 @@ Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation)
 ### Execute setup script
 ```
 git clone git@github.com:chkkchy/dotfiles.git ~/
-cd ~/dotfiles && ./setup.sh
+cd ~/dotfiles && ./_setup.sh
 ```
 
 
@@ -44,5 +44,5 @@ Download on App Store:
 
 
 ### iTerm2
-Preferences>General>Preferences>Load preferences from a custom folder or URL: `{HOME_DIR}/dotfiles/iterm2`
+Preferences>General>Preferences>Load preferences from a custom folder or URL: `~/dotfiles/iterm2`
 
