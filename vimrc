@@ -418,3 +418,24 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => netrw.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" netrwは常にtree view
+let g:netrw_liststyle = 3
+" 'v'でファイルを開くときは右側に開く。(デフォルトが左側なので入れ替え)
+"let g:netrw_altv = 1
+" 'o'でファイルを開くときは下側に開く。(デフォルトが上側なので入れ替え)
+"let g:netrw_alto = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => template
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup templates
+    autocmd!
+    autocmd BufNewFile *.sh 0r $HOME/.vim/_template/template.sh
+    autocmd BufNewFile *.html 0r $HOME/.vim/_template/template.html
+augroup END
