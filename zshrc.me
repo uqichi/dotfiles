@@ -10,6 +10,7 @@ bindkey "^]" forward-word
 bindkey "^J" backward-word
 
 # alias
+alias -g S='source'
 alias -g JR='| json_reformat'
 alias -g L='| less'
 alias -g G='| grep'
@@ -17,8 +18,8 @@ alias -g Gv='| grep -v '
 alias -g X='| xargs'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-goog() { open https://www.google.co.jp/\#q\=$1 }
-dict() { open dict://$1; }
+#goog() { open https://www.google.co.jp/\#q\=$1 }
+#dict() { open dict://$1; }
 
 # tmuxinator
 load ~/.tmuxinator/tmuxinator.zsh
