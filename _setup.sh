@@ -18,3 +18,6 @@ open /Applications/Dash.app && ln -sfn ${SRC_DIR}/dash/library.dash ~/Library/Ap
 
 # copy tmuxinator dir
 cp -r ${SRC_DIR}/tmuxinator ~/.tmuxinator
+
+# init dirs
+mkdir -p ~/Develop/Projects

@@ -5,7 +5,7 @@
 
 brew upgrade brew-cask && brew cask cleanup
 
-APPS="google-chrome google-drive alfred iterm2 dash dropbox flux evernote sequel-pro caffeine clipmenu appcleaner mysqlworkbench sublime-text mou"
+APPS="google-chrome google-drive alfred iterm2 dash dropbox flux evernote sequel-pro caffeine clipmenu appcleaner mysqlworkbench atom mou slack"
 
 for app in ${APPS}
 do

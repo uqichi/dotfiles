@@ -5,7 +5,7 @@
 
 brew update && brew cleanup
 
-APPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh nvm direnv spidermonkey"
+APPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh direnv spidermonkey"
 
 for app in ${APPS}
 do
