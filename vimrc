@@ -356,6 +356,8 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Toggle NERDTree
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
 
 
 
@@ -438,4 +440,39 @@ augroup templates
     autocmd!
     autocmd BufNewFile *.sh 0r $HOME/.vim/_template/template.sh
     autocmd BufNewFile *.html 0r $HOME/.vim/_template/template.html
+    autocmd BufNewFile *.go 0r $HOME/.vim/_template/template.go
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => neobundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
+
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
+NeoBundle 'scrooloose/nerdtree'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck

@@ -6,3 +6,6 @@
 [user]
 	email = tamura_yukichi@cyberagent.co.jp
 	name = Tamura Yukichi
+[ghq]
+    root = ~/.ghq
+    root = ~/.go
