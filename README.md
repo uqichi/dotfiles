@@ -28,6 +28,10 @@ Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation)
 ```
 git clone git@github.com:chkkchy/dotfiles.git ~/
 cd ~/dotfiles && ./_setup.sh
+
+ghq get git@github.com:chkkchy/dotfiles.git
+ghq look chkkchy/dotfiles
+./_setup.sh
 ```
 
 
