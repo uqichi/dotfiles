@@ -26,9 +26,6 @@ Follow the [installation](https://github.com/tmuxinator/tmuxinator#installation)
 
 ### Execute setup script
 ```
-git clone git@github.com:chkkchy/dotfiles.git ~/
-cd ~/dotfiles && ./_setup.sh
-
 ghq get git@github.com:chkkchy/dotfiles.git
 ghq look chkkchy/dotfiles
 ./_setup.sh
@@ -48,5 +45,5 @@ Download on App Store:
 
 
 ### iTerm2
-Preferences>General>Preferences>Load preferences from a custom folder or URL: `~/dotfiles/iterm2`
+Preferences>General>Preferences>Load preferences from a custom folder or URL: `$(ghq root)/github.com/chkkchy/dotfiles/iterm2`
 
