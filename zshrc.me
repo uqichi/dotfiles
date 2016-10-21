@@ -1,13 +1,25 @@
+# func
 load() {
     if [ -f $1 ];then
         source $1
     fi
 }
 
+peco-src() {
+    local src=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$src" ]; then
+        BUFFER="cd $src"
+        zle accept-line
+    fi
+    zle -R -c
+}
+zle -N peco-src
+
 # keybind
 bindkey "^O" kill-word
 bindkey "^]" forward-word
 bindkey "^J" backward-word
+bindkey '^Q' peco-src
 
 # hash
 hash -d d=~/Develop
@@ -25,7 +37,7 @@ alias ....='cd ../../..'
 #goog() { open https://www.google.co.jp/\#q\=$1 }
 #dict() { open dict://$1; }
 #alias g='cd `ghq list --full-path | peco`'
-alias g='ghq look `ghq list | peco | cut -d/ -f 3-`'
+#alias g='ghq look `ghq list | peco | cut -d/ -f 3-`'
 alias gh='hub browse `ghq list | peco | cut -d/ -f 3-`'
 
 # tmuxinator
