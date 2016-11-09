@@ -439,6 +439,7 @@ augroup templates
     autocmd BufNewFile *.go 0r $HOME/.vim/_template/template.go
 augroup END
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => neobundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -463,6 +464,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 call neobundle#end()
 
@@ -473,6 +475,10 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERD Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open NERDTree automatically when vim starts up on opening a directory
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
@@ -508,3 +514,16 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 " Change default arrows
 let g:NERDTreeDirArrowExpandable = '▸' "'>'
 let g:NERDTreeDirArrowCollapsible = '▾' "'v'
+
+" nerdtree-git-plugin change symbols
+"let g:NERDTreeIndicatorMapCustom = {
+"    \ "Modified"  : "✹",
+"    \ "Staged"    : "✚",
+"    \ "Untracked" : "✭",
+"    \ "Renamed"   : "➜",
+"    \ "Unmerged"  : "═",
+"    \ "Deleted"   : "✖",
+"    \ "Dirty"     : "✗",
+"    \ "Clean"     : "✔︎",
+"    \ "Unknown"   : "?"
+"    \ }
