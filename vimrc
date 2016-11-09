@@ -1,5 +1,7 @@
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -126,21 +128,26 @@ set foldcolumn=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
-" https://github.com/altercation/vim-colors-solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax on
 syntax enable
 
+" solarized
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-
-try
-    colorscheme solarized
-catch
-endtry
+" hybrid
+"let g:hybrid_custom_term_colors = 1
+"let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
+" molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 
 set background=dark
+
+try
+    colorscheme hybrid
+catch
+endtry
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -463,9 +470,22 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 NeoBundle 'fatih/vim-go'
+" colorschemas
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'vim-scripts/twilight'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'jpo/vim-railscasts-theme'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'vim-scripts/rdark'
+NeoBundle 'croaker/mustang-vim'
 
 call neobundle#end()
 
