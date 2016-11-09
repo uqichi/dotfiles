@@ -465,6 +465,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 
@@ -527,3 +528,9 @@ let g:NERDTreeDirArrowCollapsible = '▾' "'v'
 "    \ "Clean"     : "✔︎",
 "    \ "Unknown"   : "?"
 "    \ }
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-go
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_command = "goimports"
