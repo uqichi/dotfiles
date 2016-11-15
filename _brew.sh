@@ -5,7 +5,7 @@
 
 brew update && brew cleanup
 
-APPS="tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh direnv spidermonkey go glide the_silver_searcher ansible jq peco ghq hub"
+APPS="vim tig git-now tmux reattach-to-user-namespace tree wget watch nkf nmap tcpflow coreutils w3m zsh direnv spidermonkey go glide the_silver_searcher ansible jq peco ghq hub"
 
 for app in ${APPS}
 do
