@@ -9,5 +9,5 @@ sh _lndots.sh
 # copy tmuxinator dir
 cp -r ${SRC_DIR}/tmuxinator ~/.tmuxinator
 
-# init dirs
-mkdir -p ~/Develop/Projects
+# deoplete needs neovim-python (https://github.com/Shougo/deoplete.nvim)
+pip3 install neovim
