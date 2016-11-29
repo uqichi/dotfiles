@@ -11,4 +11,3 @@ done
 
 # symlink dash app library
 open /Applications/Dash.app && ln -sfn ${SRC_DIR}/dash/library.dash ~/Library/Application\ Support/Dash/library.dash
-
