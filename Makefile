@@ -15,6 +15,8 @@ deploy:
 .PHONY: init
 init:
 	@echo 'init:'
+	xcode-select --install
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	sh ./scripts/brew.sh
 	sh ./scripts/brewcask.sh
 	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/deinvim_installer.sh
@@ -24,6 +26,7 @@ init:
 	mkdir -p ${HOME}/.config/nvim
 	ln -snfv ${HOME}/.vim ${HOME}/.config/nvim/
 	ln -snfv ${HOME}/.vimrc ${HOME}/.config/nvim/init.vim
+	gem install tmuxinator
 
 .PHONY: test
 test:
