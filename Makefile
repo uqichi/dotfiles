@@ -3,8 +3,10 @@ CANDIDATES := $(wildcard .??*) bin
 EXCLUSIONS := .DS_Store .git .gitmodules .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
 DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
+.DEFAULT_GOAL := help
+
 .PHONY: all
-all: list
+all:
 
 .PHONY: list
 list:
@@ -14,7 +16,7 @@ list:
 deploy:
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	ln -sfnv $(abspath ./zprezto) ${HOME}/.zprezto
-	open /Applications/Dash.app && ln -sfnv $(abspath ./etc/dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
+	ln -sfnv $(abspath ./etc/dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
 
 .PHONY: init
 init:
@@ -22,29 +24,42 @@ init:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	sh ./etc/scripts/brew.sh
 	sh ./etc/scripts/brewcask.sh
-	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/deinvim_installer.sh
-	sh /tmp/deinvim_installer.sh ${HOME}/.vim/bundle
-	pip3 install neovim
-	mkdir -p ${HOME}/.vim
-	mkdir -p ${HOME}/.config/nvim
-	ln -snfv ${HOME}/.vim ${HOME}/.config/nvim/
-	ln -snfv ${HOME}/.vimrc ${HOME}/.config/nvim/init.vim
+	sh ./etc/scripts/vim.sh
 	gem install tmuxinator
 
 .PHONY: test
 test:
-	@echo 'test is not available for now'
+	@echo 'test command is now under development'
 
 .PHONY: update
 update:
 	git pull && git submodule update --init --recursive
 
 .PHONY: install
-install:
+install: update deploy init
+	@exec $$SHELL
 
 .PHONY: clean
 clean:
 
 .PHONY: help
 help:
-	@echo 'help:'
+	@echo "\n"\
+		"Usage: make COMMAND\n\n"\
+		"COMMANDS:\n"\
+		"\tlist\n"\
+		"\t\tlist\n"\
+		"\tdeploy\n"\
+		"\t\tdeploy\n"\
+		"\tinit\n"\
+		"\t\tinit\n"\
+		"\ttest\n"\
+		"\t\ttest\n"\
+		"\tupdate\n"\
+		"\t\tupdate\n"\
+		"\tinstall\n"\
+		"\t\tinstall\n"\
+		"\tclean\n"\
+		"\t\tclean\n"\
+		"\thelp\n"\
+		"\t\thelp\n"
