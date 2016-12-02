@@ -1,26 +1,27 @@
+DOTPATH    := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
+CANDIDATES := $(wildcard .??*) bin
+EXCLUSIONS := .DS_Store .git .gitmodules .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
+DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
+
 .PHONY: all
-all:
+all: list
 
 .PHONY: list
 list:
-	@echo 'list:'
+	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
 .PHONY: deploy
 deploy:
-	@echo 'deploy:'
-	ls -F -d .* | grep -v / | grep -v .DS_Store | xargs -I{} ln -sfnv $(abspath {}) ${HOME}/{}
-	ln -sfnv $(abspath ./tmuxinator) ${HOME}/.tmuxinator
+	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	ln -sfnv $(abspath ./zprezto) ${HOME}/.zprezto
-	ln -sfnv $(abspath ./.vim/template) ${HOME}/.vim/template
-	open /Applications/Dash.app && ln -sfnv $(abspath ./dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
+	open /Applications/Dash.app && ln -sfnv $(abspath ./etc/dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
 
 .PHONY: init
 init:
-	@echo 'init:'
 	xcode-select --install
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	sh ./scripts/brew.sh
-	sh ./scripts/brewcask.sh
+	sh ./etc/scripts/brew.sh
+	sh ./etc/scripts/brewcask.sh
 	curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/deinvim_installer.sh
 	sh /tmp/deinvim_installer.sh ${HOME}/.vim/bundle
 	pip3 install neovim
@@ -32,20 +33,17 @@ init:
 
 .PHONY: test
 test:
-	@echo 'test:'
+	@echo 'test is not available for now'
 
 .PHONY: update
 update:
-	@echo 'update:'
-	git pull
+	git pull && git submodule update --init --recursive
 
 .PHONY: install
 install:
-	@echo 'install:'
 
 .PHONY: clean
 clean:
-	@echo 'clean:'
 
 .PHONY: help
 help:
