@@ -63,6 +63,4 @@ help:
 		"\tinstall\n"\
 		"\t\tRun make update, deploy, init.\n"\
 		"\tdestroy\n"\
-		"\t\tRemove all symlinks for dotfiles.\n"\
-		"\thelp\n"\
-		"\t\tShow help.\n"
+		"\t\tRemove all symlinks for dotfiles.\n"
