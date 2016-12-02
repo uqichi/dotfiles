@@ -15,7 +15,6 @@ list:
 .PHONY: deploy
 deploy:
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
-	ln -sfnv $(abspath ./zprezto) ${HOME}/.zprezto
 	ln -sfnv $(abspath ./etc/dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
 
 .PHONY: init
