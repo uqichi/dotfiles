@@ -40,8 +40,8 @@ update:
 install: update deploy init
 	@exec $$SHELL
 
-.PHONY: clean
-clean:
+.PHONY: destroy
+destroy:
 	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 	unlink ${HOME}/Library/Application\ Support/Dash/library.dash
 
@@ -50,21 +50,19 @@ help:
 	@echo "\n"\
 		"USAGE: make COMMAND\n\n"\
 		"COMMANDS:\n"\
-		"\tdebug\n"\
-		"\t\tdebug\n"\
 		"\tlist\n"\
-		"\t\tlist\n"\
+		"\t\tShow dotfiles to be deployed.\n"\
 		"\tdeploy\n"\
-		"\t\tdeploy\n"\
+		"\t\tCreate symlinks for dotfiles.\n"\
 		"\tinit\n"\
-		"\t\tinit\n"\
+		"\t\tSetup environment settings at once.\n"\
 		"\ttest\n"\
-		"\t\ttest\n"\
+		"\t\tTest dotfiles and init scripts.\n"\
 		"\tupdate\n"\
-		"\t\tupdate\n"\
+		"\t\tSync remote repo and update brewfile.\n"\
 		"\tinstall\n"\
-		"\t\tinstall\n"\
-		"\tclean\n"\
-		"\t\tclean\n"\
+		"\t\tRun make update, deploy, init.\n"\
+		"\tdestroy\n"\
+		"\t\tRemove all symlinks for dotfiles.\n"\
 		"\thelp\n"\
-		"\t\thelp\n"
+		"\t\tShow help.\n"
