@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# `gshuf` shuffles rows in a file
+# `gshuf (shuf)` is in `coreutils` which can be downloaded by homebrew.
+# `g` is prefixed to commands in coreutils. original command name is `shuf`.
+# `sort -R` sounds too slow. see http://stackoverflow.com/questions/886237/how-can-i-randomize-the-lines-in-a-file-using-standard-tools-on-red-hat-linux
+
+readonly datasource=$HOME/bin/datasource/jpt.min.dat
+
+while getopts :n:z OPT
+do
+    case ${OPT} in
+        "n" )
+            n=${OPTARG}
+            ;;
+        "z" )
+            z=1
+            ;;
+        * )
+            echo "Usage: $(basename ${0}) [-n NUMBER] [-z]" 1>&2
+            exit 1
+            ;;
+    esac
+done
+
+gshuf -n ${n:=10} ${datasource} | while read hand rpt tpt
+do
+    read -s -r -p "${hand} " input < /dev/tty
+    if [ -z ${input} ]; then
+        echo "->${rpt}(${tpt})"
+        continue
+    fi
+    if [ ${z} ]; then
+        if [ ${input} != ${tpt} ]; then
+            echo "->${tpt}"
+        fi
+    else
+        if [ ${input} != ${rpt} ]; then
+            echo "->${rpt}"
+        fi
+    fi
+done
