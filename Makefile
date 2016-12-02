@@ -40,7 +40,6 @@ test:
 .PHONY: update
 update:
 	git pull && git submodule update --init --recursive
-	brew update && brew upgrade brew-cask
 	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file init -y
 	brew cleanup && brew cask cleanup
 
