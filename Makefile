@@ -10,10 +10,10 @@ all:
 
 .PHONY: debug
 debug:
-	@echo DOTPATH: ${DOTPATH}
-	@echo CANDIDATES: ${CANDIDATES}
-	@echo EXCLUSIONS: ${EXCLUSIONS}
-	@echo DOTFILES: ${DOTFILES}
+	@echo DOTPATH: $(DOTPATH)
+	@echo CANDIDATES: $(CANDIDATES)
+	@echo EXCLUSIONS: $(EXCLUSIONS)
+	@echo DOTFILES: $(DOTFILES)
 
 .PHONY: list
 list:
@@ -28,6 +28,8 @@ deploy:
 init:
 	xcode-select --install
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file install --preupdate
+	brew cleanup && brew cask cleanup
 	@$(foreach val, $(wildcard etc/scripts/*.sh), sh $(abspath $(val));)
 	gem install tmuxinator
 
@@ -38,6 +40,9 @@ test:
 .PHONY: update
 update:
 	git pull && git submodule update --init --recursive
+	brew update && brew upgrade brew-cask
+	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file init -y
+	brew cleanup && brew cask cleanup
 
 .PHONY: install
 install: update deploy init
