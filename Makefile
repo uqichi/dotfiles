@@ -8,6 +8,13 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 .PHONY: all
 all:
 
+.PHONY: debug
+debug:
+	@echo DOTPATH: ${DOTPATH}
+	@echo CANDIDATES: ${CANDIDATES}
+	@echo EXCLUSIONS: ${EXCLUSIONS}
+	@echo DOTFILES: ${DOTFILES}
+
 .PHONY: list
 list:
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
@@ -21,14 +28,12 @@ deploy:
 init:
 	xcode-select --install
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	sh ./etc/scripts/brew.sh
-	sh ./etc/scripts/brewcask.sh
-	sh ./etc/scripts/vim.sh
+	@$(foreach val, $(wildcard etc/scripts/*.sh), sh $(abspath $(val));)
 	gem install tmuxinator
 
 .PHONY: test
 test:
-	@echo 'test command is now under development'
+	@echo 'test command is under development for now'
 
 .PHONY: update
 update:
@@ -40,12 +45,16 @@ install: update deploy init
 
 .PHONY: clean
 clean:
+	@echo 'clean command is under development for now'
+
 
 .PHONY: help
 help:
 	@echo "\n"\
 		"Usage: make COMMAND\n\n"\
 		"COMMANDS:\n"\
+		"\tdebug\n"\
+		"\t\tdebug\n"\
 		"\tlist\n"\
 		"\t\tlist\n"\
 		"\tdeploy\n"\
