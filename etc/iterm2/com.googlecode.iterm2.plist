@@ -400,6 +400,10 @@
 	<integer>0</integer>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
+	<key>ILMediaBrowserImageSplitViewPosition</key>
+	<integer>140</integer>
+	<key>ILMediaBrowserMediaType</key>
+	<integer>1</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
@@ -413,9 +417,11 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.ghq/github.com/chkkchy/dotfiles/iterm2</string>
+	<string>~/dotfiles/etc/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelMediaBrowserTypeForOpenModeKey</key>
+	<integer>1</integer>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -447,27 +453,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>295 416 606 456 0 0 1440 877 </string>
+	<string>269 120 924 485 0 0 1366 768 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 364 620 392 0 0 1440 877 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-349 1039 606 456 -618 900 2560 1417 </string>
+	<string>373 265 620 392 0 0 1366 745 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>105 1436 796 473 -618 900 2560 1417 </string>
+	<string>258 172 796 474 0 0 1366 745 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>99 293 592 584 0 0 1440 877 </string>
+	<string>90 161 592 584 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 17 1438 860 0 0 1440 877 </string>
+	<string>0 25 1361 720 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-618 930 2558 1387 -618 900 2560 1417 </string>
+	<string>0 4 1361 741 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 412 570 451 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 417 570 451 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>0 60 1440 817 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>0 60 1440 817 0 0 1440 877 </string>
+	<string>186 20 570 452 0 0 1366 745 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2099,9 +2097,9 @@
 			<key>Background Image Is Tiled</key>
 			<false/>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/a13533/Downloads/gradient1.png</string>
 			<key>Blend</key>
-			<real>0.30000001192092896</real>
+			<real>0.35751954317092893</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -2109,7 +2107,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>1.9118343591690063</real>
+			<real>2.0095252403846153</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2119,6 +2117,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Bound Hosts</key>
+			<array/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -2658,57 +2658,24 @@
 			<string>/Users/a13533</string>
 		</dict>
 	</array>
-	<key>NoSyncConfirmBeta</key>
-	<true/>
-	<key>NoSyncHaveShownPromoWithId_4</key>
+	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>30999DA2-8FB8-48D9-AC2E-3D533C30D8EF</string>
+	<string>832E2D68-BB3F-4174-8FB0-FCCD8F16465C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>491289608.95587498</real>
+	<real>502338280.68795902</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>486641500.35626101</real>
+	<real>496307672.98498499</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>477895519.26706302</real>
+	<real>466494024.30646801</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>486438084.08807403</real>
-	<key>NoSyncTipsDisabled</key>
-	<true/>
+	<real>496307635.23948699</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
 		<string>0000</string>
-		<string>0001</string>
-		<string>0002</string>
-		<string>0003</string>
-		<string>0004</string>
-		<string>0005</string>
-		<string>0006</string>
-		<string>0007</string>
-		<string>0008</string>
-		<string>0009</string>
-		<string>0010</string>
-		<string>0011</string>
-		<string>0012</string>
-		<string>0013</string>
-		<string>0014</string>
-		<string>0015</string>
-		<string>0016</string>
-		<string>0017</string>
-		<string>0018</string>
-		<string>0019</string>
-		<string>0020</string>
-		<string>0021</string>
-		<string>0022</string>
-		<string>0023</string>
-		<string>0024</string>
-		<string>0025</string>
-		<string>0026</string>
-		<string>0027</string>
-		<string>0028</string>
-		<string>0029</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2758,7 +2725,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/a13533/.ghq/github.com/chkkchy/dotfiles/iterm2</string>
+	<string>/Users/a13533/dotfiles/etc/iterm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -2767,16 +2734,18 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=93</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=69</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-23T06:55:27Z</date>
+	<date>2016-12-02T02:23:49Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2805,8 +2774,6 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1436939392</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -5994,6 +5961,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.10</string>
+	<string>3.0.12</string>
 </dict>
 </plist>
