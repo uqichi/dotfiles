@@ -8,13 +8,6 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 .PHONY: all
 all:
 
-.PHONY: debug
-debug:
-	@echo DOTPATH: $(DOTPATH)
-	@echo CANDIDATES: $(CANDIDATES)
-	@echo EXCLUSIONS: $(EXCLUSIONS)
-	@echo DOTFILES: $(DOTFILES)
-
 .PHONY: list
 list:
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
@@ -49,13 +42,13 @@ install: update deploy init
 
 .PHONY: clean
 clean:
-	@echo 'clean command is under development for now'
-
+	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
+	unlink ${HOME}/Library/Application\ Support/Dash/library.dash
 
 .PHONY: help
 help:
 	@echo "\n"\
-		"Usage: make COMMAND\n\n"\
+		"USAGE: make COMMAND\n\n"\
 		"COMMANDS:\n"\
 		"\tdebug\n"\
 		"\t\tdebug\n"\
