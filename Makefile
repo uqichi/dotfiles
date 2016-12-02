@@ -10,6 +10,7 @@ deploy:
 	@echo 'deploy:'
 	ls -F -d .* | grep -v / | grep -v .DS_Store | xargs -I{} ln -sfnv $(abspath {}) ${HOME}/{}
 	ln -sfnv $(abspath ./tmuxinator) ${HOME}/.tmuxinator
+	ln -sfnv $(abspath ./zprezto) ${HOME}/.zprezto
 	open /Applications/Dash.app && ln -sfnv $(abspath ./dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
 
 .PHONY: init
