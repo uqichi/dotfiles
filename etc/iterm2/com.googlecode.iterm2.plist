@@ -420,6 +420,8 @@
 	<string>~/dotfiles/etc/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 565}</string>
 	<key>NSNavPanelMediaBrowserTypeForOpenModeKey</key>
 	<integer>1</integer>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -457,15 +459,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>373 265 620 392 0 0 1366 745 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>441 277 918 381 0 0 1366 745 </string>
+	<string>441 136 796 474 0 0 1366 745 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>90 161 592 584 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 26 1216 719 0 0 1366 745 </string>
+	<string>0 25 1361 720 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1361 741 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>186 20 570 452 0 0 1366 745 </string>
+	<string>0 4 1361 741 0 0 1366 745 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -634,8 +636,6 @@
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
-			<key>Background Image Location</key>
-			<string></string>
 			<key>Blend</key>
 			<real>0.30000001192092896</real>
 			<key>Blink Allowed</key>
@@ -2097,7 +2097,7 @@
 			<key>Background Image Is Tiled</key>
 			<false/>
 			<key>Background Image Location</key>
-			<string>/Users/a13533/Downloads/gradient1.png</string>
+			<string>/Users/a13533/dotfiles/etc/iterm2/profiles_window_bgimage.png</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2131,9 +2131,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bound Hosts</key>
-			<array>
-				<string></string>
-			</array>
+			<array/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
