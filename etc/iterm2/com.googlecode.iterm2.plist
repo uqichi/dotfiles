@@ -457,11 +457,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>373 265 620 392 0 0 1366 745 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>258 172 796 474 0 0 1366 745 </string>
+	<string>441 277 918 381 0 0 1366 745 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>90 161 592 584 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 25 1361 720 0 0 1366 745 </string>
+	<string>0 26 1216 719 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1361 741 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2098,6 +2098,19 @@
 			<false/>
 			<key>Background Image Location</key>
 			<string>/Users/a13533/Downloads/gradient1.png</string>
+			<key>Badge Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.5</real>
+				<key>Blue Component</key>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
+				<key>Green Component</key>
+				<real>0.0</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
 			<key>Blend</key>
 			<real>0.35751954317092893</real>
 			<key>Blink Allowed</key>
@@ -2118,7 +2131,9 @@
 				<real>1</real>
 			</dict>
 			<key>Bound Hosts</key>
-			<array/>
+			<array>
+				<string></string>
+			</array>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -2127,6 +2142,8 @@
 			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2135,6 +2152,19 @@
 				<real>0.73333334922790527</real>
 				<key>Red Component</key>
 				<real>0.73333334922790527</real>
+			</dict>
+			<key>Cursor Guide Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.25</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
+				<key>Green Component</key>
+				<real>0.91000000000000003</real>
+				<key>Red Component</key>
+				<real>0.65000000000000002</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -2470,10 +2500,23 @@
 					<string>[1;5F</string>
 				</dict>
 			</dict>
+			<key>Link Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.67800000000000005</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
+				<key>Green Component</key>
+				<real>0.27000000000000002</real>
+				<key>Red Component</key>
+				<real>0.023</real>
+			</dict>
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
-			<real>0.46666666865348816</real>
+			<real>0.51265822784810122</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -2646,8 +2689,12 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Cursor Guide</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Tab Color</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -2762,6 +2809,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -2774,6 +2823,8 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1480665600</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
