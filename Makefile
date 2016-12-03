@@ -23,8 +23,8 @@ init:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file install --preupdate
 	brew cleanup && brew cask cleanup
-	@$(foreach val, $(wildcard etc/scripts/*.sh), sh $(abspath $(val));)
 	gem install tmuxinator
+	@$(foreach val, $(wildcard etc/scripts/*.sh), sh $(abspath $(val));)
 
 .PHONY: test
 test:
@@ -33,7 +33,7 @@ test:
 .PHONY: update
 update:
 	git pull && git submodule update --init --recursive
-	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file init -y
+	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile brew file init -y
 	brew cleanup && brew cask cleanup
 
 .PHONY: install
@@ -59,7 +59,7 @@ help:
 		"\ttest\n"\
 		"\t\tTest dotfiles and init scripts.\n"\
 		"\tupdate\n"\
-		"\t\tSync remote repo and update brewfile.\n"\
+		"\t\tFetch remote changes and update brewfile.\n"\
 		"\tinstall\n"\
 		"\t\tRun make update, deploy, init.\n"\
 		"\tdestroy\n"\
