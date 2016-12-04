@@ -16,7 +16,6 @@ list:
 deploy:
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	ln -sfnv $(abspath ./etc/dash/library.dash) ${HOME}/Library/Application\ Support/Dash/library.dash
-	zsh etc/prezto/install.zsh
 
 .PHONY: init
 init:
@@ -28,7 +27,6 @@ init:
 	brew cleanup && brew cask cleanup
 	gem install tmuxinator
 	@$(foreach val, $(wildcard etc/scripts/*.sh), sh $(abspath $(val));)
-	chsh -s /bin/zsh
 
 .PHONY: test
 test:
