@@ -26,7 +26,7 @@ init:
 .PHONY: update
 update:
 	@git pull && git submodule update --init --recursive
-	@HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile brew file init -y
+	@HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file init -y
 	@brew cleanup && brew cask cleanup
 
 .PHONY: install
