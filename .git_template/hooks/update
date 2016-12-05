@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cowsay `basename "$0"`
