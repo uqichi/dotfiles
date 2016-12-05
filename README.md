@@ -2,7 +2,7 @@ dotfiles
 ==================================================
 Backup, restore, and sync the prefs and settings for my MacOS.
 
-[![](https://raw.githubusercontent.com/chkkchy/master/dotfiles/doc/iterm2ss.png)](https://raw.githubusercontent.com/chkkchy/master/dotfiles/doc/iterm2ss.png)
+[![](https://raw.githubusercontent.com/chkkchy/dotfiles/master/doc/iterm2ss.png)](https://raw.githubusercontent.com/chkkchy/dotfiles/master/doc/iterm2ss.png)
 
 
 Setup
