@@ -3,6 +3,8 @@
 	nr = now rebase
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
+	pager = less
 [user]
 	email = tamura.yukichi@gmail.com
 	name = Tamura Yukichi
@@ -11,3 +13,9 @@
 [ghq]
     root = ~/.ghq
     root = ~/.go
+[commit]
+	template = ~/.gitmessage
+[help]
+	autocorrect = 1
+[color]
+	ui = true
