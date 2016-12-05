@@ -35,7 +35,7 @@ install: update deploy init
 
 .PHONY: undeploy
 undeploy:
-	@$(foreach val, $(DOTFILES), unlink $(HOME)/$(val);)
+	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 
 .PHONY: help
 help:
