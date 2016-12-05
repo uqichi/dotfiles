@@ -6,6 +6,8 @@
 [user]
 	email = tamura.yukichi@gmail.com
 	name = Tamura Yukichi
+[init]
+	templatedir = ~/.git_template
 [ghq]
     root = ~/.ghq
     root = ~/.go
