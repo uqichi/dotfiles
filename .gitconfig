@@ -4,7 +4,7 @@
 [core]
 	excludesfile = ~/.gitignore
 [user]
-	email = tamura_yukichi@cyberagent.co.jp
+	email = tamura.yukichi@gmail.com
 	name = Tamura Yukichi
 [ghq]
     root = ~/.ghq

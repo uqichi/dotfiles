@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# `gshuf (shuf)` is in `coreutils` which can be downloaded by homebrew.
+# `g` is prefixed to commands in coreutils. original command name is `shuf`.
+
+pt=25000
+minhit=1000
+maxhit=5000
+
+players=($pt $pt $pt $pt)
+winds=("T" "N" "S" "P")
+
+for i in `seq 1 10`
+do
+    hit=$(( `gshuf -i ${minhit}-${maxhit} -n 1` / 100 * 100 ))
+
+    for j in `gshuf -i 0-3 -n 2`
+    do
+        players[$j]=$(( ${players[$j]} + ${hit} ))
+        hit=$(( ${hit} * -1 ))
+    done
+done
+
+round=`gshuf -i 3-4 -n 1`
+honba=`gshuf -i 0-3 -n 1`
+deposit=`gshuf -i 0-3 -n 1`
+echo "${round}r-${honba}, 1000*${deposit}"
+
+you=`gshuf -i 0-3 -n 1`
+i=0
+for player in "${players[@]}"
+do
+    [ ${you} -eq $i ] && pointer=" *" || pointer=" "
+    diff=$(( ${players[$you]} - ${player} ))
+    #echo "${pointer}${winds[${i}]}: ${player}"
+    sit="${sit}${pointer}${winds[${i}]}:${player}(${diff})"
+    let i++
+done
+
+echo ${sit}
