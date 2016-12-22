@@ -40,6 +40,7 @@ call dein#add('vim-syntastic/syntastic')
 call dein#add('kylef/apiblueprint.vim')
 call dein#add('elzr/vim-json')
 call dein#add('majutsushi/tagbar')
+call dein#add('Yggdroot/indentLine')
 " colorshemes
 call dein#add('nanotech/jellybeans.vim')
 call dein#add('w0ng/vim-hybrid')
@@ -120,6 +121,9 @@ endif
 "Always show current position
 set ruler
 
+" Show line number
+"set number
+
 " Height of the command bar
 set cmdheight=2
 
@@ -129,6 +133,11 @@ set hid
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
+
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
 
 " Ignore case when searching
 set ignorecase
@@ -167,6 +176,10 @@ endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+" Show white spaces
+set list
+set listchars=tab:»-,trail:.,eol:↲,extends:»,precedes:«,nbsp:%
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -250,6 +263,10 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Treat long lines as break lines (useful when moving around in them)
+map j gj
+map k gk
+
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
@@ -653,3 +670,12 @@ let g:syntastic_check_on_wq = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :TagbarShowTag<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indentLine
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set list lcs=tab:\|\
+"let g:indentLine_leadingSpaceEnabled = 1
+"let g:indentLine_leadingSpaceChar = '·'
+"let g:indentLine_showFirstIndentLevel = 1
