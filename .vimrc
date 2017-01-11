@@ -178,8 +178,8 @@ endif
 set foldcolumn=1
 
 " Show white spaces
-set list
-set listchars=tab:»-,trail:.,eol:↲,extends:»,precedes:«,nbsp:%
+"set list
+"set listchars=tab:»-,trail:.,eol:↲,extends:»,precedes:«,nbsp:%
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
