@@ -7,8 +7,6 @@
 # Docker
 alias dk='docker'
 
-alias dk-c='docker-compose'
-
 # Docker management commands
 alias dkd='docker dockerd'
 alias dkinf='docker info'
@@ -81,3 +79,8 @@ alias dkvcr='docker volume create'
 alias dkvins='docker volume inspect'
 alias dkvls='docker volume ls'
 alias dkvrm='docker volume rm'
+
+# Docker Compose
+alias dkk='docker-compose'
+alias dkku='docker-compose up'
+alias dkkd='docker-compose down'

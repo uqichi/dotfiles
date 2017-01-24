@@ -41,6 +41,7 @@ call dein#add('kylef/apiblueprint.vim')
 call dein#add('elzr/vim-json')
 call dein#add('majutsushi/tagbar')
 call dein#add('Yggdroot/indentLine')
+call dein#add('editorconfig/editorconfig-vim')
 " colorshemes
 call dein#add('nanotech/jellybeans.vim')
 call dein#add('w0ng/vim-hybrid')
@@ -663,6 +664,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-json
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_json_syntax_conceal = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
