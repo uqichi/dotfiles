@@ -123,7 +123,7 @@ endif
 set ruler
 
 " Show line number
-"set number
+set number
 
 " Height of the command bar
 set cmdheight=2
@@ -196,8 +196,8 @@ endif
 
 "let g:hybrid_custom_term_colors = 1
 "let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-let g:molokai_original = 1
-let g:rehash256 = 1
+"let g:molokai_original = 1
+"let g:rehash256 = 1
 
 try
     colorscheme hybrid
@@ -509,8 +509,14 @@ augroup END
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERD Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open NERDTree automatically when vim starts up on opening a directory
+" Open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+
 autocmd StdinReadPre * let s:std_in=1
+
+" Open a NERDTree automatically when vim starts up if no files were specified (start vim with plain vim, not vim .)
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Open NERDTree automatically when vim starts up on opening a directory
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Toggle NERDTree
@@ -574,8 +580,8 @@ map  <C-h> :tabp<CR>
 
 set autowrite
 
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
+"map <C-n> :cnext<CR>
+"map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
 
 autocmd FileType go nmap <leader>b <Plug>(go-build)
