@@ -42,6 +42,7 @@ call dein#add('elzr/vim-json')
 call dein#add('majutsushi/tagbar')
 call dein#add('Yggdroot/indentLine')
 call dein#add('editorconfig/editorconfig-vim')
+call dein#add('derekwyatt/vim-scala')
 " colorshemes
 call dein#add('nanotech/jellybeans.vim')
 call dein#add('w0ng/vim-hybrid')
@@ -646,15 +647,16 @@ set completeopt+=noinsert
 set completeopt+=noselect
 
 " Path to python interpreter for neovim
-"let g:python3_host_prog  = '/path/to/python3'
+let g:python3_host_prog  = '/usr/local/bin/python3'
 " Skip the check of neovim module
-"let g:python3_host_skip_check = 1
+let g:python3_host_skip_check = 1
 
 " Run deoplete.nvim automatically
 let g:deoplete#enable_at_startup = 1
 " deoplete-go settings
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+let g:deoplete#sources#go#pointer = 1
 let g:deoplete#sources#go#use_cache = 1
 let g:deoplete#sources#go#json_directory = '/path/to/data_dir'
 
@@ -692,3 +694,8 @@ nmap <F9> :TagbarShowTag<CR>
 "let g:indentLine_leadingSpaceEnabled = 1
 "let g:indentLine_leadingSpaceChar = '·'
 "let g:indentLine_showFirstIndentLevel = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-scala
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:scala_scaladoc_indent = 1
