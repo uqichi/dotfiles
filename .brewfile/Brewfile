@@ -14,7 +14,6 @@ cask google-chrome
 cask iterm2
 cask macdown
 cask mysqlworkbench
-cask quicklook-json
 cask sequel-pro
 
 tap homebrew/core
