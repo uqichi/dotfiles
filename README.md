@@ -1,50 +1,16 @@
 dotfiles
 ========================================
 
-My dotfiles.
-
-Setup
---------------------------------------------------
-
-Install the Apple Command Line Tools. Get Xcode on Appstore or directly by command:
+setup by:
 
 ```
-xcode-select --install
-sudo xcodebuild -license
+make init
 ```
 
-Install [Homebrew](https://brew.sh/index_ja.html):
 
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+deps for setup
 
-```
-brew doctor
-brew update & brew upgrade
-```
-
-Install [Homebrew-file](http://homebrew-file.readthedocs.io/en/latest/installation.html):
-
-```
-brew install brew-file
-```
-
-Clone the repository.
-
-```
-ghq get git@github.com:chkkchy/dotfiles.git
-ghq look chkkchy/dotfiles
-```
-
-Link
-
-```
-make deploy
-```
-
-Install brew files:
-
-```
-brew file install
-```
+- Apple Command Line Tools (Xcode)
+- [Homebrew](https://github.com/Homebrew/brew)
+- [Homebrew-file](https://github.com/rcmdnk/homebrew-file)
+- [Prezto](https://github.com/chkkchy/prezto)
