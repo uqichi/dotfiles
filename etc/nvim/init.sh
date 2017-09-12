@@ -12,3 +12,6 @@ sh /tmp/deinvim_installer.sh ${HOME}/.vim/bundle
 
 # deoplete.nvim
 pip3 install --upgrade neovim
+
+# deoplete-go
+go get -u github.com/nsf/gocode
