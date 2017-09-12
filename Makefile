@@ -5,11 +5,12 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 .DEFAULT_GOAL := help
 
-aaa:
-	@echo $(DOTPATH)
-	@echo $(CANDIDATES)
-	@echo $(EXCLUSIONS)
-	@echo $(DOTFILES)
+.PHONY: debug
+cat:
+	@echo dotpath: $(DOTPATH)
+	@echo candidates: $(CANDIDATES)
+	@echo exclusions: $(EXCLUSIONS)
+	@echo dotfiles: $(DOTFILES)
 
 .PHONY: list
 list:
@@ -25,15 +26,12 @@ init:
 	sudo xcodebuild -license
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
-	HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file install --preupdate
-	brew cleanup && brew cask cleanup
+	brew update && brew upgrade
 	$(foreach val, $(wildcard etc/*/init.sh), sh $(abspath $(val));)
 
 .PHONY: update
 update:
 	@git pull && git submodule update --init --recursive
-	@HOMEBREW_BREWFILE=$(DOTPATH)/Brewfile HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom brew file init -y
-	@brew cleanup && brew cask cleanup
 
 .PHONY: install
 install: update deploy init

@@ -10,6 +10,7 @@ Install the Apple Command Line Tools. Get Xcode on Appstore or directly by comma
 
 ```
 xcode-select --install
+sudo xcodebuild -license
 ```
 
 Install [Homebrew](https://brew.sh/index_ja.html):
@@ -39,10 +40,10 @@ ghq look chkkchy/dotfiles
 Link
 
 ```
-blablabla
+make deploy
 ```
 
-Install all brew files:
+Install brew files:
 
 ```
 brew file install
