@@ -24,7 +24,9 @@ bindkey "^J" backward-word
 bindkey '^Q' peco-src
 
 # hash
-hash -d d=~/Develop
+hash -d desk=~/Desktop
+hash -d doc=~/Documents
+hash -d dl=~/Downloads
 
 # alias
 alias -g S='source'
@@ -33,7 +35,7 @@ alias -g G='| grep'
 alias -g Gv='| grep -v '
 alias -g X='| xargs'
 alias -g C='| pbcopy'
-alias -g P='| peco`'
+alias -g P='| peco'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 #goog() { open https://www.google.co.jp/\#q\=$1 }
@@ -57,8 +59,6 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 # brew-wrap
-# brew-wrap wraps the original brew command for an automatic update of Brewfile when you execute such a brew install or brew uninstall.
-# <http://homebrew-file.readthedocs.io/en/latest/installation.html>
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi

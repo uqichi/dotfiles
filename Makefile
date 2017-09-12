@@ -5,6 +5,12 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 .DEFAULT_GOAL := help
 
+aaa:
+	@echo $(DOTPATH)
+	@echo $(CANDIDATES)
+	@echo $(EXCLUSIONS)
+	@echo $(DOTFILES)
+
 .PHONY: list
 list:
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
