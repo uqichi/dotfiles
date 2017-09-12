@@ -12,7 +12,7 @@ cask flux
 cask ganttproject
 cask google-chrome
 cask iterm2
-cask mou
+cask macdown
 cask mysqlworkbench
 cask quicklook-json
 cask sequel-pro
@@ -97,13 +97,11 @@ tap neovim/neovim
 tap rcmdnk/file
 brew brew-file
 
-## Direct install
+# Other Homebrew packages
 brew drafter --HEAD
 
 # Cask applications
 cask clipmenu
-cask google-drive
-cask medis
 
 # App Store applications
 appstore 748212890 Cleaner for Memory (2.4.2)
