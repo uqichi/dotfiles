@@ -12,61 +12,65 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/a13533/.vim/bundle/repos/github.com/Shougo/dein.vim
+set runtimepath+=/Users/tamura_yukichi/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 " Required:
-call dein#begin('/Users/a13533/.vim/bundle')
+if dein#load_state('/Users/tamura_yukichi/.vim/bundle')
+  call dein#begin('/Users/tamura_yukichi/.vim/bundle')
 
-" Let dein manage dein
-" Required:
-call dein#add('Shougo/dein.vim')
+  " Let dein manage dein
+  " Required:
+  call dein#add('/Users/tamura_yukichi/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
-" Add or remove your plugins here:
-call dein#add('Shougo/neosnippet.vim')
-call dein#add('Shougo/neosnippet-snippets')
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
 
-" You can specify revision/branch/tag.
-call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
-call dein#add('Shougo/unite.vim')
-call dein#add('Shougo/neocomplete.vim')
-call dein#add('ujihisa/unite-colorscheme')
-call dein#add('scrooloose/nerdtree')
-call dein#add('Xuyuanp/nerdtree-git-plugin')
-call dein#add('fatih/vim-go')
-call dein#add('Shougo/deoplete.nvim')
-call dein#add('zchee/deoplete-go', {'build': 'make'})
-call dein#add('vim-syntastic/syntastic')
-call dein#add('kylef/apiblueprint.vim')
-call dein#add('elzr/vim-json')
-call dein#add('majutsushi/tagbar')
-call dein#add('Yggdroot/indentLine')
-call dein#add('editorconfig/editorconfig-vim')
-call dein#add('derekwyatt/vim-scala')
-" colorshemes
-call dein#add('nanotech/jellybeans.vim')
-call dein#add('w0ng/vim-hybrid')
-call dein#add('vim-scripts/twilight')
-call dein#add('jonathanfilip/vim-lucius')
-call dein#add('jpo/vim-railscasts-theme')
-call dein#add('altercation/vim-colors-solarized')
-call dein#add('vim-scripts/Wombat')
-call dein#add('tomasr/molokai')
-call dein#add('vim-scripts/rdark')
-call dein#add('croaker/mustang-vim')
-call dein#add('mhartington/oceanic-next')
+  call dein#add('Shougo/unite.vim')
+  call dein#add('Shougo/neocomplete.vim')
+  call dein#add('ujihisa/unite-colorscheme')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('fatih/vim-go')
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('zchee/deoplete-go', {'build': 'make'})
+  call dein#add('vim-syntastic/syntastic')
+  call dein#add('kylef/apiblueprint.vim')
+  call dein#add('elzr/vim-json')
+  call dein#add('majutsushi/tagbar')
+  call dein#add('Yggdroot/indentLine')
+  call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('derekwyatt/vim-scala')
+  " colorshemes
+  call dein#add('nanotech/jellybeans.vim')
+  call dein#add('w0ng/vim-hybrid')
+  call dein#add('vim-scripts/twilight')
+  call dein#add('jonathanfilip/vim-lucius')
+  call dein#add('jpo/vim-railscasts-theme')
+  call dein#add('altercation/vim-colors-solarized')
+  call dein#add('vim-scripts/Wombat')
+  call dein#add('tomasr/molokai')
+  call dein#add('vim-scripts/rdark')
+  call dein#add('croaker/mustang-vim')
+  call dein#add('mhartington/oceanic-next')
 
-" Required:
-call dein#end()
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
 " Required:
 filetype plugin indent on
 syntax enable
 
 " If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
+"if dein#check_install()
+"  call dein#install()
+"endif
 
 "End dein Scripts-------------------------
 
