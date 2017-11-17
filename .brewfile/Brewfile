@@ -2,19 +2,19 @@
 # tap repositories and their packages
 
 tap caskroom/cask
-cask alfred
-cask appcleaner
 cask atom
-cask caffeine
-cask dropbox
-cask evernote
-cask flux
 cask ganttproject
-cask google-chrome
-cask iterm2
+cask flux
+cask appcleaner
 cask macdown
-cask mysqlworkbench
+cask evernote
+cask iterm2
+cask dropbox
+cask caffeine
 cask sequel-pro
+cask google-chrome
+cask alfred
+cask mysqlworkbench
 
 tap homebrew/core
 brew autoconf
