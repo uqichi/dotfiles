@@ -1,23 +1,6 @@
 
 # tap repositories and their packages
 
-tap caskroom/cask
-cask atom
-cask ganttproject
-cask flux
-cask appcleaner
-cask macdown
-cask evernote
-cask iterm2
-cask dropbox
-cask docker
-cask clipy
-cask caffeine
-cask sequel-pro
-cask google-chrome
-cask alfred
-cask mysqlworkbench
-
 tap homebrew/core
 brew autoconf
 brew automake
@@ -93,6 +76,24 @@ brew xz
 brew yajl
 brew zsh
 
+tap caskroom/cask
+cask atom
+cask ganttproject
+cask flux
+cask appcleaner
+cask macdown
+cask evernote
+cask iterm2
+cask dropbox
+cask docker
+cask dash
+cask clipy
+cask caffeine
+cask sequel-pro
+cask google-chrome
+cask alfred
+cask mysqlworkbench
+
 tap neovim/neovim
 
 tap rcmdnk/file
@@ -100,5 +101,4 @@ brew brew-file
 
 # App Store applications
 appstore 748212890 Cleaner for Memory (2.4.2)
-#appstore 441258766 Magnet (2.1.0)
 appstore 880001334 Reeder (3.0.5)
