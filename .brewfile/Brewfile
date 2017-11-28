@@ -10,6 +10,8 @@ cask macdown
 cask evernote
 cask iterm2
 cask dropbox
+cask docker
+cask clipy
 cask caffeine
 cask sequel-pro
 cask google-chrome
