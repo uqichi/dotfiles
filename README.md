@@ -2,22 +2,6 @@
 
 setup for mac.
 
-setup by:
-
-```
-make init
-```
-
-
-deps for setup
-
-- Apple Command Line Tools (Xcode)
-- [Homebrew](https://github.com/Homebrew/brew)
-- [Homebrew-file](https://github.com/rcmdnk/homebrew-file)
-- [Prezto](https://github.com/chkkchy/prezto)
-
-
---
 
 ユーザー名: `tamura_yukichi`
 
@@ -88,27 +72,11 @@ make install
 ＊ ~/.config/brewfile/Brewfile
 
 
-# iTerm2
-- Preferences
-	- General
-		- Load preferences from a custom folder or URL: `/Users/tamura_yukichi/dotfiles/etc/iterm2`
-		- Save changes to folder when iTerm2 quits: on
 
-# nvim
+deps for setup
 
---
+- Apple Command Line Tools (Xcode)
+- [Homebrew](https://github.com/Homebrew/brew)
+- [Homebrew-file](https://github.com/rcmdnk/homebrew-file)
+- [Prezto](https://github.com/chkkchy/prezto)
 
-# neovim
-mkdir -p ${HOME}/.vim
-ln -snfv ${HOME}/.vim ${HOME}/.config/nvim/
-ln -snfv ${HOME}/.vimrc ${HOME}/.config/nvim/init.vim
-
-# dein.vim
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/deinvim_installer.sh
-sh /tmp/deinvim_installer.sh ${HOME}/.vim/bundle
-
-# deoplete.nvim
-pip3 install --upgrade neovim
-
-# deoplete-go
-go get -u github.com/nsf/gocode
