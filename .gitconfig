@@ -11,8 +11,8 @@
 [init]
 	templatedir = ~/.git_template
 [ghq]
-    root = ~/.ghq
-    root = ~/.go
+    root = ~/ghq
+    root = ~/go
 [commit]
 	template = ~/.gitmessage
 [help]
