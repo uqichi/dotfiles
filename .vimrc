@@ -507,7 +507,6 @@ augroup templates
     autocmd!
     autocmd BufNewFile *.sh 0r $HOME/.vim/template/template.sh
     autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
-    autocmd BufNewFile *.go 0r $HOME/.vim/template/template.go
 augroup END
 
 
