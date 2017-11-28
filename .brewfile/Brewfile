@@ -98,15 +98,7 @@ tap neovim/neovim
 tap rcmdnk/file
 brew brew-file
 
-# Other Homebrew packages
-brew drafter --HEAD
-
-# Cask applications
-cask clipmenu
-
 # App Store applications
 appstore 748212890 Cleaner for Memory (2.4.2)
-appstore 449589707 Dash (3.2.3)
-appstore 441258766 Magnet (2.1.0)
+#appstore 441258766 Magnet (2.1.0)
 appstore 880001334 Reeder (3.0.5)
-appstore 425955336 Skitch (2.8)
