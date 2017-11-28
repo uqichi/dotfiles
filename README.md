@@ -1,8 +1,8 @@
 # dotfiles
 
-dots for mac.
+dots for mac setup.
 
-## Setup Steps
+## Steps
 
 Upgrade to latest macOS at App Store:
 
