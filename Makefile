@@ -6,7 +6,7 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 .DEFAULT_GOAL := help
 
 .PHONY: debug
-cat:
+debug:
 	@echo dotpath: $(DOTPATH)
 	@echo candidates: $(CANDIDATES)
 	@echo exclusions: $(EXCLUSIONS)
@@ -22,11 +22,11 @@ deploy:
 
 .PHONY: init
 init:
-	xcode-select --install
-	sudo xcodebuild -license
+	#xcode-select --install
+	#sudo xcodebuild -license
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
-	brew update && brew upgrade
+	#brew update && brew upgrade
 	$(foreach val, $(wildcard etc/*/init.sh), sh $(abspath $(val));)
 
 .PHONY: update
@@ -40,6 +40,10 @@ install: update deploy init
 .PHONY: undeploy
 undeploy:
 	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
+
+.PHONY: destroy
+destroy:
+	# delete symlink and dotfiles
 
 .PHONY: help
 help:
