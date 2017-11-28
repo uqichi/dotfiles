@@ -46,22 +46,8 @@ undeploy:
 
 .PHONY: destroy
 destroy:
-	# delete symlink and dotfiles
+	# TODO: Remove a dotfile and its symlink from home directory.
 
 .PHONY: help
 help:
-	@echo "\n"\
-		"USAGE: make COMMAND\n\n"\
-		"COMMANDS:\n"\
-		"\tlist\n"\
-		"\t\tShow dotfiles to be targeted.\n"\
-		"\tdeploy\n"\
-		"\t\tCreate symlinks for dotfiles.\n"\
-		"\tinit\n"\
-		"\t\tSetup initial environment settings.\n"\
-		"\tupdate\n"\
-		"\t\tFetch remote changes and update brewfile.\n"\
-		"\tinstall\n"\
-		"\t\tRun make update, deploy and init.\n"\
-		"\tundeploy\n"\
-		"\t\tRemove all symlinks for dotfiles.\n"
+	@cat doc/make_help.txt
