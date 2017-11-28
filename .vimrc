@@ -12,15 +12,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/tamura_yukichi/.vim/bundle/repos/github.com/Shougo/dein.vim
+set runtimepath+=/Users/tamura_yukichi/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/tamura_yukichi/.vim/bundle')
-  call dein#begin('/Users/tamura_yukichi/.vim/bundle')
+if dein#load_state('/Users/tamura_yukichi/.cache/dein')
+  call dein#begin('/Users/tamura_yukichi/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/tamura_yukichi/.vim/bundle/repos/github.com/Shougo/dein.vim')
+  call dein#add('/Users/tamura_yukichi/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
@@ -507,7 +507,6 @@ augroup templates
     autocmd!
     autocmd BufNewFile *.sh 0r $HOME/.vim/template/template.sh
     autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
-    autocmd BufNewFile *.go 0r $HOME/.vim/template/template.go
 augroup END
 
 

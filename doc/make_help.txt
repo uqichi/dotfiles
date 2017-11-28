@@ -1,0 +1,20 @@
+
+USAGE: make COMMAND
+
+COMMANDS:
+        debug
+                Print variables for debugging purpose.
+        list
+                Show dotfiles to be targeted.
+        deploy
+                Create symlinks to home direcotory.
+        init
+                Execute initial setup scripts.
+        update
+                Fetch remote changes from github.
+        install
+                Run make update, deploy and init. At first, for all:)
+        undeploy
+                Remove symlinks from home directory.
+        destroy
+                Remove a dotfile and its symlink from home directory.

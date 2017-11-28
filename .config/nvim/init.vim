@@ -1,1 +1,1 @@
-/Users/tamura_yukichi/.vimrc
+../../.vimrc
