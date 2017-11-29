@@ -4,24 +4,26 @@ dots for mac setup.
 
 ## Steps
 
-Upgrade to latest macOS at App Store:
+1. Upgrade to latest macOS at App Store:
 
 `macOS High Sierra` (2017/11/28時点)
 
-Install Command Line Tools:
+2. Install Command Line Tools:
 
 ```
 xcode-select --install
 ```
 
-Clone dotfiles repo to home directory:
+3. Clone dotfiles repo to home directory:
 
 ```
 git clone git@github.com:chkkchy/dotfiles.git ~
 ```
 
-Finally:
+4. Finally, execute setup command:
 
 ```
 make install
 ```
+
+Every settings would be done for now:)
