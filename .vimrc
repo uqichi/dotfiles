@@ -514,7 +514,7 @@ augroup END
 " => NERD Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd p
 
 autocmd StdinReadPre * let s:std_in=1
 

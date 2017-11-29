@@ -3,7 +3,7 @@
 	nr = now rebase
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = nvim
 	pager = less
 [user]
 	email = tamura.yukichi@gmail.com

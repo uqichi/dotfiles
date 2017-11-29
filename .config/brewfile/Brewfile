@@ -25,6 +25,7 @@ brew gnu-typist
 brew go
 brew heroku
 brew hub
+brew icu4c
 brew imagemagick
 brew jemalloc
 brew jpeg
@@ -38,6 +39,7 @@ brew libuv
 brew libvterm
 brew libyaml
 brew lua
+brew luajit
 brew mas
 brew maven
 brew msgpack
@@ -45,9 +47,11 @@ brew neovim
 brew nettle
 brew nkf
 brew nmap
+brew node
 brew nspr
 brew oniguruma
 brew openssl
+brew openssl@1.1
 brew pcre
 brew peco
 brew pkg-config
@@ -78,6 +82,7 @@ brew zsh
 
 tap caskroom/cask
 cask atom
+cask toggl
 cask ganttproject
 cask flux
 cask appcleaner
@@ -91,6 +96,7 @@ cask clipy
 cask caffeine
 cask sequel-pro
 cask google-chrome
+cask java
 cask alfred
 cask mysqlworkbench
 
@@ -100,5 +106,10 @@ tap rcmdnk/file
 brew brew-file
 
 # App Store applications
-appstore 748212890 Cleaner for Memory (2.4.2)
-appstore 880001334 Reeder (3.0.5)
+appstore 973134470 Be Focused (1.6.2)
+appstore 1055511498 Day One (2.5.4)
+appstore 1180531112 DeskApp for YouTube (1.1.1)
+appstore 441258766 Magnet (2.1.0)
+appstore 748212890 Memory Cleaner (2.4.4)
+appstore 929507092 PhotoScapeX (2.6.3)
+appstore 880001334 Reeder (3.1.2)
