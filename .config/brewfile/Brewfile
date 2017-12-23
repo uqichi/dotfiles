@@ -77,9 +77,11 @@ brew yajl
 brew zsh
 
 tap caskroom/cask
+cask slack
 cask atom
 cask ganttproject
 cask flux
+cask amazon-music
 cask appcleaner
 cask macdown
 cask evernote
@@ -89,6 +91,7 @@ cask docker
 cask dash
 cask clipy
 cask caffeine
+cask 4k-youtube-to-mp3
 cask sequel-pro
 cask google-chrome
 cask alfred
