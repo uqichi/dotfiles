@@ -17,7 +17,7 @@ xcode-select --install
 3. Clone dotfiles repo to home directory:
 
 ```
-git clone git@github.com:chkkchy/dotfiles.git ~
+git clone git@github.com:chkkchy/dotfiles.git ~/dotfiles
 ```
 
 4. Finally, execute setup command:

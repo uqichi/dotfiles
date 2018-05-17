@@ -22,10 +22,11 @@ deploy:
 
 .PHONY: init
 init:
-	zsh && chsh -s /bin/zsh
-	#xcode-select --install
+	#zsh
+	#chsh -s /bin/zsh
+	#code-select --install
 	#sudo xcodebuild -license
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
 	#brew update && brew upgrade
 	brew install rcmdnk/file/brew-file
