@@ -22,14 +22,13 @@ deploy:
 
 .PHONY: init
 init:
-	#zsh
-	#chsh -s /bin/zsh
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
 	brew update && brew upgrade
 	brew install rcmdnk/file/brew-file
 	brew-file cat && brew-file install
 	$(foreach val, $(wildcard etc/*/init.sh), sh $(abspath $(val));)
+	chsh -s /bin/zsh # Set Zsh as your default shell
 
 .PHONY: update
 update:
