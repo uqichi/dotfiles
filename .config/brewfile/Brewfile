@@ -56,7 +56,6 @@ brew pcre
 brew peco
 brew pkg-config
 brew pwgen
-brew python3
 brew rbenv
 brew readline
 brew reattach-to-user-namespace
@@ -81,26 +80,6 @@ brew yajl
 brew zsh
 
 tap caskroom/cask
-cask slack
-cask atom
-#cask ganttproject
-cask flux
-cask appcleaner
-#cask yummy-ftp
-cask evernote
-cask iterm2
-cask dropbox
-cask docker
-#cask dash
-cask clipy
-cask caffeine
-#cask 4k-youtube-to-mp3
-cask rescuetime
-cask sequel-pro
-cask google-chrome
-cask java
-cask alfred
-cask mysqlworkbench
 
 tap neovim/neovim
 
@@ -110,9 +89,23 @@ brew brew-file
 # Other Homebrew packages
 brew awsebcli
 brew golang
+brew python3
 
-# App Store applications
-#appstore 1180531112 DeskApp for YouTube (1.1.1)
-#appstore 441258766 Magnet (2.1.0)
-#appstore 748212890 Memory Cleaner (2.4.4)
-#appstore 880001334 Reeder (3.1.2)
+# Other Cask applications
+cask alfred
+cask appcleaner
+cask atom
+cask caffeine
+cask clipy
+cask dash
+cask docker
+cask dropbox
+cask evernote
+cask flux
+cask google-chrome
+cask iterm2
+cask java
+cask mysqlworkbench
+cask rescuetime
+cask sequel-pro
+cask slack
