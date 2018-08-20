@@ -12,15 +12,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/tamura_yukichi/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=/Users/yukichi/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/tamura_yukichi/.cache/dein')
-  call dein#begin('/Users/tamura_yukichi/.cache/dein')
+if dein#load_state('/Users/yukichi/.cache/dein')
+  call dein#begin('/Users/yukichi/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/tamura_yukichi/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('/Users/yukichi/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
