@@ -1,6 +1,6 @@
 # dotfiles
 
-dots for mac setup.
+dotfiless for macOS setup.
 
 ## Steps
 
@@ -14,16 +14,16 @@ dots for mac setup.
 xcode-select --install
 ```
 
-3. Clone dotfiles repo to home directory:
+3. Clone this repo to home directory:
 
 ```
-git clone git@github.com:chkkchy/dotfiles.git ~/dotfiles
+git clone git@github.com:uqichi/dotfiles.git ~/dotfiles
 ```
 
-4. Finally, execute setup command:
+4. Execute one command:
 
 ```
 make install
 ```
 
-Every settings would be done for now:)
+All things are set up for now:)
