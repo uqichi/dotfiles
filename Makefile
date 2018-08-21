@@ -42,10 +42,6 @@ install: update deploy init
 undeploy:
 	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 
-.PHONY: destroy
-destroy:
-	# TODO: Remove a dotfile and its symlink from home directory.
-
 .PHONY: help
 help:
 	@cat doc/make_help.txt

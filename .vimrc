@@ -527,6 +527,10 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 map <C-n> :NERDTreeToggle<CR>
 "nnoremap <silent><C-n> :NERDTreeToggle<CR>
 
+" when I press <C-b> or <leader><b> in the NERDtree window, the command line shows :Bookmark <name>, all I need to do is fill the <name> and enter.
+autocmd Filetype nerdtree nnoremap <buffer> <C-b> :Bookmark<Space>
+autocmd Filetype nerdtree nnoremap <buffer> <leader>b :Bookmark<Space>
+
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
