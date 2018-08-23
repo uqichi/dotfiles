@@ -11,6 +11,7 @@ brew cmake
 brew coreutils
 brew cowsay
 brew ctags
+brew dep
 brew direnv
 brew freetype
 brew gdbm
@@ -102,6 +103,7 @@ cask docker
 cask dropbox
 cask evernote
 cask flux
+cask goland
 cask google-chrome
 cask iterm2
 cask java
@@ -109,3 +111,4 @@ cask mysqlworkbench
 cask rescuetime
 cask sequel-pro
 cask slack
+cask visual-studio-code

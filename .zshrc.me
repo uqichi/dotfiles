@@ -46,6 +46,7 @@ alias ....='cd ../../..'
 alias gh='hub browse `ghq list | peco | cut -d/ -f 3-`'
 alias vim='nvim'
 alias n='nvim'
+alias gitalias='tail -n +25  ~/.zprezto/modules/git/alias.zsh | less'
 
 # tmuxinator
 load ~/.tmuxinator/tmuxinator.zsh
@@ -77,3 +78,8 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+# キーリピート速度を2に設定（小さい程速い）
+defaults write -g KeyRepeat -int 2
+# キーリピート開始速度の早さを15に設定（小さい程早い）
+defaults write -g InitialKeyRepeat -int 15
