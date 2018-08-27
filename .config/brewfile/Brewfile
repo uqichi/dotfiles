@@ -26,6 +26,7 @@ brew gnu-typist
 brew go
 brew heroku
 brew hub
+brew hugo
 brew icu4c
 brew imagemagick
 brew jemalloc
@@ -105,6 +106,7 @@ cask evernote
 cask flux
 cask goland
 cask google-chrome
+cask insomnia
 cask iterm2
 cask java
 cask mysqlworkbench
