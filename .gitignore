@@ -3,3 +3,5 @@
 .config/configstore
 .config/direnv
 .config/gocode
+
+bin/enc
