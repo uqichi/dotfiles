@@ -6,22 +6,22 @@ DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 .DEFAULT_GOAL := help
 
 .PHONY: debug
-debug:
+debug: ## Print variables for debugging purpose
 	@echo dotpath: $(DOTPATH)
 	@echo candidates: $(CANDIDATES)
 	@echo exclusions: $(EXCLUSIONS)
 	@echo dotfiles: $(DOTFILES)
 
 .PHONY: list
-list:
+list: ## Show dotfiles to be targeted
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
 .PHONY: deploy
-deploy:
+deploy: ## Create symlinks to home direcotory
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 
 .PHONY: init
-init:
+init: ## Execute initial setup scripts
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew doctor
 	brew update && brew upgrade
@@ -31,17 +31,17 @@ init:
 	chsh -s /bin/zsh # Set Zsh as your default shell
 
 .PHONY: update
-update:
+update: ## Fetch remote changes from github
 	@git pull && git submodule update --init --recursive
 
 .PHONY: install
-install: update deploy init
+install: update deploy init ## Run make update, deploy and init. At first, for all:)
 	@exec $$SHELL
 
 .PHONY: undeploy
-undeploy:
+undeploy: ## Remove symlinks from home directory
 	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 
 .PHONY: help
 help:
-	@cat doc/make_help.txt
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
