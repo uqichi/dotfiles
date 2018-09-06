@@ -79,6 +79,7 @@ brew w3m
 brew watch
 brew xz
 brew yajl
+brew yarn --without-node
 brew zsh
 
 tap caskroom/cask
@@ -109,6 +110,7 @@ cask google-chrome
 cask insomnia
 cask iterm2
 cask java
+cask karabiner-elements
 cask mysqlworkbench
 cask rescuetime
 cask sequel-pro
