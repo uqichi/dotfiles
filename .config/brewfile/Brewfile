@@ -61,6 +61,7 @@ brew pwgen
 brew rbenv
 brew readline
 brew reattach-to-user-namespace
+brew rename
 brew ruby-build
 brew sl
 brew spidermonkey
@@ -94,7 +95,7 @@ brew awsebcli
 brew golang
 brew python3
 
-# Other Cask applications
+# Cask applications
 cask alfred
 cask appcleaner
 cask atom
