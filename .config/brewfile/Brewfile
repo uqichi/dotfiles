@@ -95,6 +95,7 @@ brew golang
 brew python3
 
 # Other Cask applications
+cask adobe-creative-cloud
 cask alfred
 cask appcleaner
 cask atom
@@ -115,4 +116,5 @@ cask mysqlworkbench
 cask rescuetime
 cask sequel-pro
 cask slack
+cask teamsql
 cask visual-studio-code
