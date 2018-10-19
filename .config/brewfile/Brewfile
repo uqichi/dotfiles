@@ -86,6 +86,8 @@ brew yajl
 brew yarn --without-node
 brew zsh
 
+tap homebrew/command-not-found
+
 tap caskroom/cask
 
 tap neovim/neovim

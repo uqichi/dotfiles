@@ -84,3 +84,5 @@ bindkey '^Z' fancy-ctrl-z
 defaults write -g KeyRepeat -int 2
 # キーリピート開始速度の早さを15に設定（小さい程早い）
 defaults write -g InitialKeyRepeat -int 15
+
+if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi

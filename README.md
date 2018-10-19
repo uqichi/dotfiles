@@ -1,29 +1,29 @@
 # dotfiles
 
-fancy setup for my personal macOS.
+my dotfiles for mac-os.
 
 ## Installation
 
-1. Install Command Line Tools:
+  1. Install Command Line Tools:
+
+     ```console
+     xcode-select --install
+     ```
+
+  2. Clone the repository:
+
+     ```console
+     git clone --recursive git@github.com:uqichi/dotfiles.git
+     ```
+
+  3. Configure it:
+
+     ```
+     make install
+     ```
+
+## Command Usage
 
 ```
-xcode-select --install
-```
-
-2. Fork this repo:
-
-```
-git clone git@github.com:uqichi/dotfiles.git ~/dotfiles
-```
-
-3. Configure it:
-
-```
-make install
-```
-
-## Help
-
-```
-make [help]
+make
 ```
