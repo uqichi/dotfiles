@@ -1,5 +1,5 @@
 # func
-load() {
+load-src() {
     if [ -f $1 ];then
         source $1
     fi
@@ -13,6 +13,7 @@ peco-src() {
     fi
     zle -R -c
 }
+
 zle -N peco-src
 
 # keybind
@@ -29,7 +30,7 @@ hash -d fl=~/Dropbox/freelancer
 
 # alias
 alias -g S='source'
-alias -g SS='source ~/.zshrc.me'
+alias -g SS='source ~/.zshrc'
 alias -g L='| less'
 alias -g G='| grep'
 alias -g Gv='| grep -v '
@@ -50,7 +51,7 @@ alias gitalias='tail -n +25 ~/.zprezto/modules/git/alias.zsh | less'
 alias dockeralias='less ~/.zshrc.docker'
 
 # tmuxinator
-load ~/.tmuxinator/tmuxinator.zsh
+load-src ~/.tmuxinator/tmuxinator.zsh
 
 # direnv
 eval "$(direnv hook zsh)"
