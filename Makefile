@@ -16,9 +16,17 @@ print: ## Print variables for debug
 list: ## List all dotfiles to be deployed
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
+.PHONY: update
+update: ## Fetch remote changes from github
+	@git pull && git submodule update --init --recursive
+
 .PHONY: deploy
 deploy: ## Create symlinks to home directory
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+
+.PHONY: undeploy
+undeploy: ## Remove symlinks from home directory
+	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 
 .PHONY: init
 init: ## Run initial setup
@@ -30,17 +38,9 @@ init: ## Run initial setup
 	$(foreach val, $(wildcard etc/*/init.sh), sh $(abspath $(val));)
 	chsh -s /bin/zsh # Set Zsh as your default shell
 
-.PHONY: update
-update: ## Fetch remote changes from github
-	@git pull && git submodule update --init --recursive
-
 .PHONY: install
 install: update deploy init ## Run install, at first, for all :)
 	@exec $$SHELL
-
-.PHONY: undeploy
-undeploy: ## Remove symlinks from home directory
-	@$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 
 .PHONY:
 help:
