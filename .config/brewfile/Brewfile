@@ -9,6 +9,7 @@ brew bat
 brew bdw-gc
 brew carthage
 brew cmake
+brew colormake
 brew coreutils
 brew cowsay
 brew ctags
@@ -25,7 +26,6 @@ brew gmp
 brew gnu-getopt
 brew gnu-typist
 brew go
-brew heroku
 brew htop
 brew hub
 brew hugo
@@ -88,6 +88,8 @@ brew zsh
 
 tap homebrew/command-not-found
 
+tap alecthomas/homebrew-tap
+
 tap caskroom/cask
 
 tap neovim/neovim
@@ -98,6 +100,8 @@ brew brew-file
 # Other Homebrew packages
 brew awsebcli
 brew golang
+brew gometalinter
+brew heroku
 brew python3
 
 # Other Cask applications
