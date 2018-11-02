@@ -53,6 +53,7 @@ brew nkf
 brew nmap
 brew node
 brew nspr
+brew nvm
 brew oniguruma
 brew openssl
 brew openssl@1.1
