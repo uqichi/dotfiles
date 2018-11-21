@@ -87,6 +87,9 @@ brew yajl
 brew yarn --without-node
 brew zsh
 
+tap homebrew/cask-versions
+cask sequel-pro-nightly
+
 tap homebrew/command-not-found
 
 tap alecthomas/homebrew-tap
@@ -125,7 +128,6 @@ cask java
 cask karabiner-elements
 cask mysqlworkbench
 cask rescuetime
-cask sequel-pro
 cask skitch
 cask slack
 cask teamsql
