@@ -49,6 +49,7 @@ alias v='nvim'
 alias t='tmux'
 alias gitalias='tail -n +25 ~/.zprezto/modules/git/alias.zsh | less'
 alias dockeralias='less ~/.zshrc.docker'
+alias diff='colordiff'
 
 # tmuxinator
 load-src ~/.tmuxinator/tmuxinator.zsh

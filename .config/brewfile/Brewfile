@@ -2,6 +2,7 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew amazon-ecs-cli
 brew autoconf
 brew automake
 brew awscli
@@ -9,6 +10,7 @@ brew bat
 brew bdw-gc
 brew carthage
 brew cmake
+brew colordiff
 brew colormake
 brew coreutils
 brew cowsay
