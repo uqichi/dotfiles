@@ -1,6 +1,7 @@
 [alias]
 	n = now --all --stat
 	nr = now rebase
+	push-f = push --force-with-lease
 [core]
 	excludesfile = ~/.gitignore
 	editor = nvim
