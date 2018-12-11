@@ -129,6 +129,7 @@ cask iterm2
 cask java
 cask karabiner-elements
 cask mysqlworkbench
+cask postico
 cask psequel
 cask rescuetime
 cask skitch
