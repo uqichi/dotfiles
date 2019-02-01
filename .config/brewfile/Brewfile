@@ -64,6 +64,7 @@ brew peco
 brew pkg-config
 brew protobuf
 brew pwgen
+brew python
 brew python@2
 brew rbenv
 brew readline
