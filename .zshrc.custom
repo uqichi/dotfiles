@@ -26,6 +26,7 @@ bindkey '^Q' peco-src
 hash -d desk=~/Desktop
 hash -d doc=~/Documents
 hash -d dl=~/Downloads
+hash -d dv=~/Develop
 hash -d fl=~/Dropbox/freelancer
 
 # alias
@@ -94,3 +95,5 @@ if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew comma
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# Go 1.11 Modules
+export GO111MODULE=on
