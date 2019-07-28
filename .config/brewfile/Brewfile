@@ -127,7 +127,6 @@ cask dash
 cask docker
 cask dropbox
 cask evernote
-cask flux
 cask goland
 cask google-chrome
 cask insomnia
@@ -136,9 +135,6 @@ cask java
 cask karabiner-elements
 cask mysqlworkbench
 cask postico
-cask psequel
-cask rescuetime
 cask skitch
 cask slack
-cask teamsql
 cask visual-studio-code
