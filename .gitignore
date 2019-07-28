@@ -1,6 +1,8 @@
 .DS_Store
 
-.config/configstore
-.config/direnv
-.config/gocode
-.config/yarn
+.config/*
+!.config/brewfile
+!.config/nvim
+
+.tmuxinator/*.yml
+.tmuxinator/*.yaml

@@ -30,8 +30,6 @@ hash -d dv=~/Develop
 hash -d fl=~/Dropbox/freelancer
 
 # alias
-alias -g S='source'
-alias -g SS='source ~/.zshrc'
 alias -g L='| less'
 alias -g G='| grep'
 alias -g Gv='| grep -v '
@@ -49,8 +47,11 @@ alias vim='nvim'
 alias v='nvim'
 alias t='tmux'
 alias gitalias='tail -n +25 ~/.zprezto/modules/git/alias.zsh | less'
-alias dockeralias='less ~/.zshrc.docker'
+alias dockeralias='tail -n +25 ~/.zprezto/modules/docker/alias.zsh | less'
 alias diff='colordiff'
+alias gip='curl ipecho.net/plain; echo'
+
+setopt hist_ignore_space
 
 # tmuxinator
 load-src ~/.tmuxinator/tmuxinator.zsh
@@ -97,3 +98,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Go 1.11 Modules
 export GO111MODULE=on
+
+export PATH=$PATH:/usr/local/Cellar/node/11.13.0/bin

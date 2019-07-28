@@ -70,6 +70,7 @@ brew rbenv
 brew readline
 brew reattach-to-user-namespace
 brew ruby-build
+brew sbt
 brew sl
 brew spidermonkey
 brew sqlite
@@ -77,7 +78,6 @@ brew stoken
 brew tcpflow
 brew terraform
 brew the_silver_searcher
-brew tig
 brew tmux
 brew tomcat
 brew tree
@@ -97,12 +97,17 @@ tap homebrew/command-not-found
 
 tap alecthomas/homebrew-tap
 
+tap c-bata/kube-prompt
+brew kube-prompt
+
 tap caskroom/cask
 
 tap neovim/neovim
 
 tap rcmdnk/file
 brew brew-file
+
+tap weaveworks/tap
 
 # Other Homebrew packages
 brew awsebcli
