@@ -42,6 +42,10 @@ init: ## Run initial setup
 install: update deploy init ## Run install, at first, for all :)
 	@exec $$SHELL
 
+.PHONY: upmod
+upmod: ## Update sub modules to the latest version
+	git submodule update --rebase --remote
+
 .PHONY:
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

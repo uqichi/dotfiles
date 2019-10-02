@@ -9,8 +9,8 @@
 [user]
 	email = tamura.yukichi@gmail.com
 	name = Tamura Yukichi
-[init]
-	templatedir = ~/.git_template
+#[init]
+#	templatedir = ~/.git_template
 [ghq]
     root = ~/ghq
 [commit]
@@ -19,5 +19,3 @@
 	autocorrect = 1
 [color]
 	ui = true
-#[url "git@github.com:"]
-#	insteadOf = https://github.com/

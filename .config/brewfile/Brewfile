@@ -1,140 +1,151 @@
-
-# tap repositories and their packages
-
-tap homebrew/core
-brew amazon-ecs-cli
-brew autoconf
-brew automake
-brew awscli
-brew bat
-brew bdw-gc
-brew carthage
-brew cmake
-brew colordiff
-brew colormake
-brew coreutils
-brew cowsay
-brew ctags
-brew dep
-brew direnv
-brew freetype
-brew gdbm
-brew gettext
-brew ghq
-brew git
-brew git-now
-brew glide
-brew gmp
-brew gnu-getopt
-brew gnu-typist
-brew go
-brew htop
-brew hub
-brew hugo
-brew icu4c
-brew imagemagick
-brew jemalloc
-brew jpeg
-brew jq
-brew libevent
-brew libpng
-brew libtermkey
-brew libtiff
-brew libtool
-brew libuv
-brew libvterm
-brew libyaml
-brew lua
-brew luajit
-brew mas
-brew maven
-brew msgpack
-brew neovim
-brew nettle
-brew nkf
-brew nmap
-brew node
-brew nspr
-brew nvm
-brew oniguruma
-brew openssl
-brew openssl@1.1
-brew pcre
-brew peco
-brew pkg-config
-brew protobuf
-brew pwgen
-brew python
-brew python@2
-brew rbenv
-brew readline
-brew reattach-to-user-namespace
-brew ruby-build
-brew sbt
-brew sl
-brew spidermonkey
-brew sqlite
-brew stoken
-brew tcpflow
-brew terraform
-brew the_silver_searcher
-brew tmux
-brew tomcat
-brew tree
-brew unibilium
-brew vim --with-lua
-brew w3m
-brew watch
-brew xz
-brew yajl
-brew yarn --without-node
-brew zsh
-
-tap homebrew/cask-versions
-cask sequel-pro-nightly
-
-tap homebrew/command-not-found
-
-tap alecthomas/homebrew-tap
-
-tap c-bata/kube-prompt
-brew kube-prompt
-
-tap caskroom/cask
-
-tap neovim/neovim
-
-tap rcmdnk/file
-brew brew-file
-
-tap weaveworks/tap
-
-# Other Homebrew packages
-brew awsebcli
-brew golang
-brew gometalinter
-brew heroku
-brew python3
-
-# Other Cask applications
-cask adobe-creative-cloud
-cask alfred
-cask appcleaner
-cask atom
-cask caffeine
-cask clipy
-cask dash
-cask docker
-cask dropbox
-cask evernote
-cask goland
-cask google-chrome
-cask insomnia
-cask iterm2
-cask java
-cask karabiner-elements
-cask mysqlworkbench
-cask postico
-cask skitch
-cask slack
-cask visual-studio-code
+tap "alecthomas/tap"
+tap "c-bata/kube-prompt"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/command-not-found"
+tap "homebrew/core"
+tap "neovim/neovim"
+tap "rcmdnk/file"
+tap "remind101/formulae"
+tap "weaveworks/tap"
+brew "amazon-ecs-cli"
+brew "autoconf"
+brew "automake"
+brew "aws-elasticbeanstalk"
+brew "gdbm"
+brew "openssl"
+brew "readline"
+brew "sqlite"
+brew "xz"
+brew "python"
+brew "awscli"
+brew "bat"
+brew "bdw-gc"
+brew "carthage"
+brew "cmake"
+brew "colordiff"
+brew "colormake"
+brew "coreutils"
+brew "cowsay"
+brew "ctags"
+brew "go"
+brew "dep"
+brew "direnv"
+brew "libpng"
+brew "freetype"
+brew "gettext"
+brew "ghq"
+brew "git"
+brew "gnu-getopt"
+brew "git-now"
+brew "pcre"
+brew "glide"
+brew "gmp"
+brew "gnu-typist"
+brew "kubernetes-helm"
+brew "helmfile"
+brew "icu4c"
+brew "node"
+brew "heroku"
+brew "htop"
+brew "hub"
+brew "hugo"
+brew "jpeg"
+brew "libtiff"
+brew "libtool"
+brew "imagemagick"
+brew "jemalloc"
+brew "oniguruma"
+brew "jq"
+brew "kubernetes-cli", link: false
+brew "libevent"
+brew "unibilium"
+brew "libtermkey"
+brew "libuv"
+brew "libvterm"
+brew "libyaml"
+brew "lua"
+brew "luajit"
+brew "mas"
+brew "maven"
+brew "msgpack"
+brew "neovim"
+brew "nettle"
+brew "nkf"
+brew "nmap"
+brew "nspr"
+brew "nvm"
+brew "openssl@1.1"
+brew "peco"
+brew "pkg-config"
+brew "protobuf"
+brew "pwgen"
+brew "ruby-build"
+brew "rbenv"
+brew "reattach-to-user-namespace"
+brew "sbt"
+brew "serverless"
+brew "sl"
+brew "spidermonkey"
+brew "stoken"
+brew "tcpflow"
+brew "terraform"
+brew "the_silver_searcher"
+brew "tig"
+brew "tmux"
+brew "tomcat"
+brew "tree"
+brew "vim"
+brew "w3m"
+brew "watch"
+brew "wget"
+brew "yajl"
+brew "yarn"
+brew "yq"
+brew "zsh"
+brew "alecthomas/tap/gometalinter"
+brew "c-bata/kube-prompt/kube-prompt"
+brew "rcmdnk/file/brew-file"
+brew "remind101/formulae/assume-role"
+brew "weaveworks/tap/eksctl"
+cask "adobe-creative-cloud"
+cask "alfred"
+cask "appcleaner"
+cask "atom"
+cask "caffeine"
+cask "clipy"
+cask "dash"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "evernote"
+cask "flux"
+cask "goland"
+cask "google-chrome"
+cask "insomnia"
+cask "iterm2"
+cask "java"
+cask "karabiner-elements"
+cask "macdown"
+cask "mysqlworkbench"
+cask "postico"
+cask "psequel"
+cask "rescuetime"
+cask "sequel-pro-nightly"
+cask "skitch"
+cask "slack"
+cask "teamsql"
+cask "visual-studio-code"
+mas "DeskApp for YouTube", id: 1180531112
+mas "GarageBand", id: 682658836
+mas "GIPHY CAPTURE", id: 668208984
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Magnet", id: 441258766
+mas "Memory Diag", id: 748212890
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "TweetDeck", id: 485812721
+mas "Wunderlist", id: 410628904
