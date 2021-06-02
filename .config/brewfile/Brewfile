@@ -139,7 +139,6 @@ cask 'appcleaner'
 cask 'atom'
 cask 'caffeine'
 cask 'clipy'
-cask 'dash'
 cask 'discord'
 cask 'docker'
 cask 'dropbox'
@@ -185,12 +184,11 @@ cask 'psequel'
 mas 'DeskApp for YouTube (1.3)', id: 1180531112
 mas 'GarageBand (10.3.5)', id: 682658836
 mas 'GIPHY CAPTURE (4.1)', id: 668208984
-mas 'iMovie (10.1.15)', id: 408981434
-mas 'Keynote (10.1)', id: 409183694
+mas 'iMovie (10.2.3)', id: 408981434
+mas 'Keynote (11.0.1)', id: 409183694
 mas 'Magnet (2.4)', id: 441258766
 mas 'Memory Diag (2.4.8)', id: 748212890
-mas 'Numbers (10.1)', id: 409203825
-mas 'Pages (10.1)', id: 409201541
-mas 'Pocket (1.8.5)', id: 568494494
-mas 'TweetDeck (3.16.1)', id: 485812721
-mas 'Wunderlist (3.4.25)', id: 410628904
+mas 'Numbers (11.0)', id: 409203825
+mas 'Pages (11.0)', id: 409201541
+mas 'Pocket (1.8.6)', id: 568494494
+mas 'TweetDeck (3.18)', id: 485812721
