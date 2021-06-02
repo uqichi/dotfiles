@@ -51,6 +51,14 @@ alias dockeralias='tail -n +25 ~/.zprezto/modules/docker/alias.zsh | less'
 alias diff='colordiff'
 alias gip='curl ipecho.net/plain; echo'
 
+# --------------------------------------------------
+alias gkestg='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-stg-4aaa8f59'
+alias gkeprd='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-prd-f9e67d3d'
+alias gkeloadtest='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-loadtest-20dc17'
+alias gkedev='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-dev-e6b87ef3'
+alias gkeqatest='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-qatest-b024f04a'
+alias gketesting='gcloud container clusters get-credentials shared-central-cluster --region asia-northeast1 --project hrb-kubernetes-testing-12a1d9f'
+
 setopt hist_ignore_space
 
 # tmuxinator
@@ -100,3 +108,5 @@ export NVM_DIR="$HOME/.nvm"
 export GO111MODULE=on
 
 export PATH=$PATH:/usr/local/Cellar/node/11.13.0/bin
+
+export PATH=$PATH:$HOME/.cargo/bin
